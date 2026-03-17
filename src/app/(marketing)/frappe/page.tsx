@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { FadeUp } from "@/components/shared/motion-wrapper";
+import { BarChartCard, FlowDiagramCard } from "@/components/shared/visuals";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -98,6 +99,56 @@ const useCases = [
   "Building portals and internal apps around procurement, service delivery, customer onboarding, compliance, or operations support.",
   "Extending ERPNext where industry-specific forms, calculations, reports, or interfaces are required.",
   "Creating a central orchestration layer between multiple business systems without introducing another fragmented toolset.",
+];
+
+const architectureFlow = [
+  {
+    title: "Model the business object",
+    description:
+      "Define the DocTypes, relationships, statuses, and validation rules around the operational process.",
+  },
+  {
+    title: "Control the workflow",
+    description:
+      "Apply permissions, assignments, notifications, approvals, and task routing to the real-world decision path.",
+  },
+  {
+    title: "Extend the system boundary",
+    description:
+      "Expose APIs, background jobs, integrations, and portal actions where the process crosses teams or systems.",
+  },
+  {
+    title: "Surface management visibility",
+    description:
+      "Deliver workspaces, dashboards, reports, and print outputs tied directly to live transaction data.",
+  },
+];
+
+const buildProfile = [
+  {
+    label: "Configuration leverage",
+    value: "High",
+    widthClass: "w-[84%]",
+    note: "Use core Frappe features first to keep the solution stable and maintainable.",
+  },
+  {
+    label: "Workflow depth",
+    value: "Strong",
+    widthClass: "w-[90%]",
+    note: "Frappe is especially good when a process depends on approvals, roles, and document state changes.",
+  },
+  {
+    label: "Integration readiness",
+    value: "API-first",
+    widthClass: "w-[82%]",
+    note: "Useful for portals, connectors, middleware, and applications that need to coordinate multiple systems.",
+  },
+  {
+    label: "Custom UI and portals",
+    value: "Flexible",
+    widthClass: "w-[76%]",
+    note: "Good fit for customer, supplier, field-team, and internal service experiences.",
+  },
 ];
 
 export default function FrappePage() {
@@ -246,6 +297,27 @@ export default function FrappePage() {
                 </div>
               </FadeUp>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="section-padding bg-white border-y border-surface-border">
+        <Container>
+          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+            <FadeUp>
+              <FlowDiagramCard
+                eyebrow="Architecture Map"
+                title="How we usually shape a Frappe business application"
+                steps={architectureFlow}
+              />
+            </FadeUp>
+            <FadeUp delay={0.1}>
+              <BarChartCard
+                eyebrow="Build Profile"
+                title="Where Frappe creates the most leverage"
+                items={buildProfile}
+              />
+            </FadeUp>
           </div>
         </Container>
       </section>

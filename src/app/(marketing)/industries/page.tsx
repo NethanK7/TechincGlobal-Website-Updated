@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { SectionHeader } from "@/components/shared/section-header";
 import { FadeUp } from "@/components/shared/motion-wrapper";
+import { BarChartCard, FlowDiagramCard } from "@/components/shared/visuals";
 import { Button } from "@/components/ui/button";
 import { industries } from "@/content/industries";
 
@@ -24,6 +25,52 @@ const iconPaths: Record<string, string> = {
     Globe: "M12 2a10 10 0 100 20A10 10 0 0012 2zM2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z",
 };
 
+const industryFlow = [
+    {
+        title: "Map the operating model",
+        description: "We identify the actual commercial, operational, compliance, and reporting patterns of the industry.",
+    },
+    {
+        title: "Configure the process core",
+        description: "ERPNext modules, approvals, controls, documents, and dashboards are aligned to the sector workflow.",
+    },
+    {
+        title: "Extend where needed",
+        description: "Frappe is used for industry-specific forms, portals, integrations, and exceptions where standard features are not enough.",
+    },
+    {
+        title: "Measure operational outcomes",
+        description: "Leadership dashboards are built around the KPI signals that matter inside each vertical, not generic reporting packs.",
+    },
+];
+
+const sectorSignals = [
+    {
+        label: "Inventory and fulfillment intensity",
+        value: "Very high",
+        widthClass: "w-[90%]",
+        note: "Strong in manufacturing, distribution, retail, and trade-heavy operations.",
+    },
+    {
+        label: "Project and service control",
+        value: "High",
+        widthClass: "w-[78%]",
+        note: "Useful in professional services, construction, and delivery-led organizations.",
+    },
+    {
+        label: "Compliance and audit structure",
+        value: "High",
+        widthClass: "w-[82%]",
+        note: "Important in healthcare, education, finance-linked approvals, and regulated workflows.",
+    },
+    {
+        label: "Custom workflow flexibility",
+        value: "Very high",
+        widthClass: "w-[88%]",
+        note: "Frappe extensions let industry-specific requirements stay inside the same platform.",
+    },
+];
+
 export default function IndustriesPage() {
     return (
         <div className="bg-white">
@@ -41,6 +88,27 @@ export default function IndustriesPage() {
                             not forced into a generic template.
                         </p>
                     </FadeUp>
+                </Container>
+            </section>
+
+            <section className="section-padding bg-[#F9FBFC] border-y border-surface-border">
+                <Container>
+                    <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+                        <FadeUp>
+                            <FlowDiagramCard
+                                eyebrow="Industry Fit Model"
+                                title="How we shape ERPNext and Frappe around sector-specific operations"
+                                steps={industryFlow}
+                            />
+                        </FadeUp>
+                        <FadeUp delay={0.1}>
+                            <BarChartCard
+                                eyebrow="Coverage Signals"
+                                title="Where the platform typically creates the most sector value"
+                                items={sectorSignals}
+                            />
+                        </FadeUp>
+                    </div>
                 </Container>
             </section>
 

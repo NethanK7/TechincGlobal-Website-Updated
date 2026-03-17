@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { FadeUp } from "@/components/shared/motion-wrapper";
+import { BarChartCard, FlowDiagramCard } from "@/components/shared/visuals";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -125,6 +126,56 @@ const outcomes = [
   },
 ];
 
+const dataFlow = [
+  {
+    title: "Commercial trigger",
+    description:
+      "Leads, quotations, orders, pricing rules, and customer commitments start the operational chain.",
+  },
+  {
+    title: "Operational execution",
+    description:
+      "Procurement, warehouse movements, project activity, production, or service tasks execute against the same order context.",
+  },
+  {
+    title: "Financial impact",
+    description:
+      "Invoices, landed cost, receivables, payables, payroll, and costing update the books in real time.",
+  },
+  {
+    title: "Management visibility",
+    description:
+      "Dashboards, reports, and exception alerts surface live operational and financial signals for leadership.",
+  },
+];
+
+const controlSignals = [
+  {
+    label: "Inventory integrity",
+    value: "High",
+    widthClass: "w-[88%]",
+    note: "Batch, serial, valuation, and warehouse controls aligned to actual stock movement.",
+  },
+  {
+    label: "Financial visibility",
+    value: "Live",
+    widthClass: "w-[92%]",
+    note: "Operational transactions flow into receivables, payables, margin, and cash views without manual stitching.",
+  },
+  {
+    label: "Process automation",
+    value: "Strong",
+    widthClass: "w-[80%]",
+    note: "Approvals, notifications, escalations, and scheduled actions reduce process friction.",
+  },
+  {
+    label: "Executive reporting",
+    value: "Board-ready",
+    widthClass: "w-[86%]",
+    note: "Management packs can be built from the same live data model instead of offline spreadsheets.",
+  },
+];
+
 export default function ERPNextPage() {
   return (
     <div className="bg-[#F9FBFC]">
@@ -222,6 +273,27 @@ export default function ERPNextPage() {
                 </div>
               </FadeUp>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="section-padding bg-white border-y border-surface-border">
+        <Container>
+          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+            <FadeUp>
+              <FlowDiagramCard
+                eyebrow="Enterprise Flow"
+                title="How ERPNext links transactions from demand to decision"
+                steps={dataFlow}
+              />
+            </FadeUp>
+            <FadeUp delay={0.1}>
+              <BarChartCard
+                eyebrow="Control Board"
+                title="The signals leaders expect from a proper ERP backbone"
+                items={controlSignals}
+              />
+            </FadeUp>
           </div>
         </Container>
       </section>

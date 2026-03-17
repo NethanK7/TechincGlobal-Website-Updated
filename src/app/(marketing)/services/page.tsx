@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { SectionHeader } from "@/components/shared/section-header";
 import { FadeUp } from "@/components/shared/motion-wrapper";
+import { BarChartCard, FlowDiagramCard } from "@/components/shared/visuals";
 import { Button } from "@/components/ui/button";
 import { services } from "@/content/services";
 
@@ -25,6 +26,52 @@ const iconPaths: Record<string, string> = {
     GraduationCap: "M22 10v6M2 10l10-5 10 5-10 5zM6 12v5c3 3 9 3 12 0v-5",
 };
 
+const serviceJourney = [
+    {
+        title: "Assess and prioritize",
+        description: "Clarify business goals, pain points, risks, and the services needed to move the program forward.",
+    },
+    {
+        title: "Build the operating foundation",
+        description: "Implement core ERP, workflow design, migration, integration, and change control in the right order.",
+    },
+    {
+        title: "Extend and optimize",
+        description: "Add automation, custom apps, reporting, and support layers once the core system is stable.",
+    },
+    {
+        title: "Sustain and improve",
+        description: "Use managed support, training, and continuous improvement to protect long-term value after go-live.",
+    },
+];
+
+const serviceSignals = [
+    {
+        label: "Strategy and implementation depth",
+        value: "End-to-end",
+        widthClass: "w-[94%]",
+        note: "Discovery, rollout, adoption, and support are designed as one service system rather than separate vendors.",
+    },
+    {
+        label: "Customization capacity",
+        value: "Strong",
+        widthClass: "w-[82%]",
+        note: "Frappe engineering allows industry and company-specific requirements to stay inside the platform.",
+    },
+    {
+        label: "Automation and integration value",
+        value: "High",
+        widthClass: "w-[86%]",
+        note: "Useful for approval-heavy processes, external system sync, and operational orchestration.",
+    },
+    {
+        label: "Post-go-live continuity",
+        value: "Embedded",
+        widthClass: "w-[80%]",
+        note: "Managed support and optimization are part of the service story, not an afterthought.",
+    },
+];
+
 export default function ServicesPage() {
     return (
         <div className="bg-white">
@@ -42,6 +89,27 @@ export default function ServicesPage() {
                             ERP transformation.
                         </p>
                     </FadeUp>
+                </Container>
+            </section>
+
+            <section className="section-padding bg-[#F9FBFC] border-y border-surface-border">
+                <Container>
+                    <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+                        <FadeUp>
+                            <FlowDiagramCard
+                                eyebrow="Engagement Map"
+                                title="How the service portfolio typically fits into a transformation program"
+                                steps={serviceJourney}
+                            />
+                        </FadeUp>
+                        <FadeUp delay={0.1}>
+                            <BarChartCard
+                                eyebrow="Service Strengths"
+                                title="Where the TECHINCGLOBAL service stack creates the most leverage"
+                                items={serviceSignals}
+                            />
+                        </FadeUp>
+                    </div>
                 </Container>
             </section>
 

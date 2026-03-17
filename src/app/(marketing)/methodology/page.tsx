@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { SectionHeader } from "@/components/shared/section-header";
 import { FadeUp } from "@/components/shared/motion-wrapper";
+import { BarChartCard, FlowDiagramCard } from "@/components/shared/visuals";
 import { Button } from "@/components/ui/button";
 import { methodologyContent } from "@/content/company/methodology";
 
@@ -12,6 +13,52 @@ export const metadata: Metadata = {
         "The NXTGEN Agile implementation methodology delivers ERP projects 40% faster with higher adoption rates. Learn our proven 5-phase framework for enterprise ERP transformation.",
     alternates: { canonical: "https://techincglobal.com/methodology" },
 };
+
+const deliverySignals = [
+    {
+        label: "Stakeholder visibility",
+        value: "Very high",
+        widthClass: "w-[92%]",
+        note: "Working software, sign-offs, and milestone outputs keep leadership close to reality.",
+    },
+    {
+        label: "Scope adaptability",
+        value: "Controlled",
+        widthClass: "w-[84%]",
+        note: "Changes are absorbed through cadence and prioritization instead of expensive late-stage resets.",
+    },
+    {
+        label: "Data migration confidence",
+        value: "Progressive",
+        widthClass: "w-[78%]",
+        note: "Data is validated in waves, not discovered as a surprise at cutover.",
+    },
+    {
+        label: "User adoption readiness",
+        value: "Embedded",
+        widthClass: "w-[88%]",
+        note: "Training, champions, and feedback are part of the method rather than post-go-live rescue work.",
+    },
+];
+
+const cadenceFlow = [
+    {
+        title: "Discover and align",
+        description: "Define the business priorities, future-state process, stakeholders, and risk profile.",
+    },
+    {
+        title: "Iterate in working slices",
+        description: "Deliver usable process areas in short cycles so feedback happens while change is still cheap.",
+    },
+    {
+        title: "Validate with real data",
+        description: "Test configurations, migration logic, reports, and approvals against actual operating cases.",
+    },
+    {
+        title: "Go live with control",
+        description: "Cut over with trained users, hypercare coverage, and a clear post-launch optimization backlog.",
+    },
+];
 
 export default function MethodologyPage() {
     return (
@@ -95,6 +142,27 @@ export default function MethodologyPage() {
                                     </div>
                                 ))}
                             </div>
+                        </FadeUp>
+                    </div>
+                </Container>
+            </section>
+
+            <section className="section-padding bg-[#F9FBFC] border-y border-surface-border">
+                <Container>
+                    <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+                        <FadeUp>
+                            <FlowDiagramCard
+                                eyebrow="Cadence Model"
+                                title="What the NXTGEN project rhythm looks like in practice"
+                                steps={cadenceFlow}
+                            />
+                        </FadeUp>
+                        <FadeUp delay={0.1}>
+                            <BarChartCard
+                                eyebrow="Delivery Signals"
+                                title="Where the methodology creates the biggest risk reduction"
+                                items={deliverySignals}
+                            />
                         </FadeUp>
                     </div>
                 </Container>
