@@ -16,7 +16,7 @@ function LayoutContent({ children }: { children: React.ReactNode }) {
       <main id="main-content" className={cn("min-h-screen", isSidebar && "lg:pl-16")}>
         {children}
       </main>
-      {!isSidebar && <Footer />}
+      <Footer />
     </>
   );
 }

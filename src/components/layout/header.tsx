@@ -157,7 +157,7 @@ function DesktopDropdown({
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       onClose();
-    }, 150);
+    }, 250);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
