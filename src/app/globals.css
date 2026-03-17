@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================================
+   CSS Custom Properties - shadcn/ui compatible design tokens
+   ========================================================================= */
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 84% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 5%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+  }
+
+  /* -------------------------------------------------------------------
+     Dark mode tokens (prepared for future use)
+     ------------------------------------------------------------------- */
+  .dark {
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 84% 7%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 84% 7%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 224 76% 48%;
+  }
+}
+
+/* =========================================================================
+   Base styles
+   ========================================================================= */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* Respect prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Selection styling */
+  ::selection {
+    background-color: hsl(221 83% 53% / 0.2);
+    color: hsl(222 84% 5%);
+  }
+
+  ::-moz-selection {
+    background-color: hsl(221 83% 53% / 0.2);
+    color: hsl(222 84% 5%);
+  }
+
+  /* Focus-visible styling for accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+    border-radius: calc(var(--radius) - 4px);
+  }
+
+  /* Remove default focus styles for mouse users */
+  :focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+/* =========================================================================
+   Component utilities
+   ========================================================================= */
+
+@layer components {
+  /* Section padding - consistent vertical rhythm */
+  .section-padding {
+    @apply py-section-md;
+  }
+
+  .section-padding-sm {
+    @apply py-section-sm;
+  }
+
+  .section-padding-lg {
+    @apply py-section-lg;
+  }
+
+  .section-padding-xl {
+    @apply py-section-xl;
+  }
+
+  /* Container with consistent horizontal padding */
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Skip to content link for accessibility */
+  .skip-to-content {
+    @apply absolute -top-10 left-4 z-[100] rounded-md bg-brand-blue px-4 py-2 text-sm font-medium text-white transition-all;
+  }
+
+  .skip-to-content:focus {
+    @apply top-4;
+  }
+
+  /* Gradient text utility */
+  .gradient-text {
+    @apply bg-blue-gradient bg-clip-text text-transparent;
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20;
+  }
+
+  /* Prose-like max-width for readable text */
+  .prose-width {
+    @apply max-w-prose mx-auto;
+  }
+}
+
+/* =========================================================================
+   Utility overrides
+   ========================================================================= */
+
+@layer utilities {
+  /* Hide scrollbar across browsers */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Balanced text wrapping for headings */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
