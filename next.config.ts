@@ -8,10 +8,7 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [],
   },
-  // Enable server actions
-  serverActions: {
-    allowedOrigins: ["localhost:3000"],
-  } as unknown as NextConfig["serverActions"],
+
   eslint: {
     ignoreDuringBuilds: true,
   },

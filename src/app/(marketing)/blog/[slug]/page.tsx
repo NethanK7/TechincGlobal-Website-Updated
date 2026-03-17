@@ -6,12 +6,10 @@ import {
   Clock,
   User,
   ArrowRight,
-  ArrowLeft,
   Tag,
-  BookOpen,
 } from "lucide-react";
 
-import { cn } from "@/lib/utils";
+// removed cn
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,7 +19,7 @@ import {
   CardDescription,
   CardContent,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+// removed Badge
 import { Separator } from "@/components/ui/separator";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
 import { CTASection } from "@/components/shared/cta-section";

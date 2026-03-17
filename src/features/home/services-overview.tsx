@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { SectionHeader } from "@/components/shared/section-header";
-import { FeatureCard } from "@/components/shared/feature-card";
+import { FeatureCard, iconMap } from "@/components/shared/feature-card";
 import { StaggerContainer, StaggerItem } from "@/components/shared/motion-wrapper";
 
 // ---------------------------------------------------------------------------
@@ -83,7 +83,7 @@ function ServicesOverview() {
 
         <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
           {services.map((service, i) => {
-            const { iconMap } = require("@/components/shared/feature-card");
+
             const IconComponent = iconMap[service.icon];
 
             return (

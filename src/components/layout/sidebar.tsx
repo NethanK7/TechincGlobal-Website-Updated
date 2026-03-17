@@ -16,7 +16,7 @@ import { useLayoutMode } from "./layout-provider";
 import { mainNavItems } from "@/config/navigation";
 import { useState, useRef } from "react";
 
-const iconMap: { [key: string]: any } = {
+const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
     Home: LayoutDashboard,
     Platforms: Layers,
     Services: Lightbulb,

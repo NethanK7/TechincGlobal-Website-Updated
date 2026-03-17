@@ -37,7 +37,7 @@ export default function IndustriesPage() {
                         </h1>
                         <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/70">
                             Every industry has unique workflows, compliance requirements, and operational challenges.
-                            Our ERPNext implementations are configured to match your sector's exact needs —
+                            Our ERPNext implementations are configured to match your sector&apos;s exact needs —
                             not forced into a generic template.
                         </p>
                     </FadeUp>
