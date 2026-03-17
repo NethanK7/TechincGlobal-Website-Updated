@@ -5,177 +5,323 @@ import { FadeUp } from "@/components/shared/motion-wrapper";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-    title: "Frappe Framework Services | TECHINCGLOBAL",
-    description: "Build custom, scalable web applications with the Frappe Framework. Low-code rapid development using Python & JavaScript. Sri Lanka's leading Frappe partner.",
+  title: "Frappe Development Services | TECHINCGLOBAL",
+  description:
+    "Frappe application design, custom module development, workflow engineering, integration, portal development, and support services from TECHINCGLOBAL.",
 };
 
+const frameworkPillars = [
+  {
+    title: "Metadata-driven application model",
+    description:
+      "Frappe uses DocTypes, forms, permissions, workflows, and reports as first-class platform constructs. That lets teams build operational applications faster than starting from low-level plumbing.",
+  },
+  {
+    title: "Built-in business application primitives",
+    description:
+      "Authentication, roles, background jobs, print formats, notifications, web forms, REST APIs, reports, dashboards, and audit trails are already part of the framework.",
+  },
+  {
+    title: "Strong fit for operational systems",
+    description:
+      "Frappe is particularly effective when a company needs internal business software that coordinates people, approvals, transactions, documents, and real-time status across departments.",
+  },
+];
+
+const whatWeBuild = [
+  {
+    title: "Operational apps",
+    items: ["Procurement control apps", "Field service workflows", "Internal portals", "Approval-heavy line-of-business systems"],
+  },
+  {
+    title: "ERPNext extensions",
+    items: ["Custom DocTypes", "Industry-specific workflows", "Approval matrices", "Management dashboards and reports"],
+  },
+  {
+    title: "Integration layers",
+    items: ["Payment gateway connectors", "Courier and logistics integrations", "Third-party system sync", "API middleware and orchestration"],
+  },
+  {
+    title: "Self-service experiences",
+    items: ["Customer portals", "Supplier portals", "Employee utilities", "Submission and request management"],
+  },
+];
+
+const engineeringCapabilities = [
+  {
+    title: "DocTypes, permissions, and workflow design",
+    description:
+      "We design document structures, validation rules, field logic, approval chains, and user permissions so the application mirrors the controls your operation actually needs.",
+  },
+  {
+    title: "Server logic and automation",
+    description:
+      "Python controllers, scheduled jobs, notifications, assignment logic, and event-driven automation are used to eliminate manual follow-up and strengthen control points.",
+  },
+  {
+    title: "Reports, dashboards, and workspaces",
+    description:
+      "We build the views management and frontline teams need: operational queues, summary dashboards, printable outputs, and exception reporting that is tied to live transactions.",
+  },
+  {
+    title: "API and external system integration",
+    description:
+      "Frappe provides a practical base for API-first integrations. We use it to connect commerce channels, finance services, external CRMs, device data, and specialist systems.",
+  },
+];
+
+const companyApproach = [
+  {
+    title: "We start with the process, not the framework.",
+    description:
+      "Before writing code, we map the operational flow, approval logic, data ownership, document lifecycle, and reporting expectations. That keeps the solution aligned with how the business runs.",
+  },
+  {
+    title: "We prefer configuration before customization.",
+    description:
+      "Where Frappe already offers the right behavior, we use standard constructs first. That reduces complexity and keeps the system easier to maintain over time.",
+  },
+  {
+    title: "We customize when it improves control or speed.",
+    description:
+      "When your process genuinely needs a custom data model, portal, workflow, or integration, we build it cleanly so it remains understandable and supportable after go-live.",
+  },
+  {
+    title: "We treat supportability as part of engineering quality.",
+    description:
+      "Apps are delivered with roles, testing, deployment discipline, documentation, and change control in mind, not as isolated features that become difficult to operate later.",
+  },
+];
+
+const useCases = [
+  "Replacing approval-heavy spreadsheets and email-based request handling with controlled digital workflows.",
+  "Building portals and internal apps around procurement, service delivery, customer onboarding, compliance, or operations support.",
+  "Extending ERPNext where industry-specific forms, calculations, reports, or interfaces are required.",
+  "Creating a central orchestration layer between multiple business systems without introducing another fragmented toolset.",
+];
+
 export default function FrappePage() {
-    return (
-        <div className="bg-[#F9FBFC]">
-            {/* Hero */}
-            <section className="bg-hero-gradient py-16 sm:py-24 text-inverse">
-                <Container size="default">
-                    <FadeUp>
-                        <div className="max-w-3xl">
-                            <span className="text-xs font-semibold uppercase tracking-widest text-brand-teal">Open Source Framework</span>
-                            <h1 className="mt-3 text-display-md font-bold text-white sm:text-display-lg">
-                                The Battery-Included <span className="text-brand-teal">Frappe Framework</span>
-                            </h1>
-                            <p className="mt-5 text-lg text-white/70">
-                                Frappe is a full-stack, meta-data driven web framework written in Python and JavaScript.
-                                Build complex ERP-like extensions 10x faster with absolute architecture discipline.
-                            </p>
-                            <div className="mt-8 flex gap-4">
-                                <Button size="lg" asChild>
-                                    <Link href="/contact">Build a Custom App</Link>
-                                </Button>
-                            </div>
-                        </div>
-                    </FadeUp>
-                </Container>
-            </section>
+  return (
+    <div className="bg-[#F9FBFC]">
+      <section className="bg-hero-gradient py-16 text-inverse sm:py-24">
+        <Container size="default">
+          <FadeUp>
+            <div className="max-w-4xl">
+              <span className="text-xs font-semibold uppercase tracking-widest text-brand-teal">
+                Application Framework
+              </span>
+              <h1 className="mt-3 text-display-md font-bold text-white sm:text-display-lg">
+                Frappe development for companies that need custom business software without
+                rebuilding the basics from scratch.
+              </h1>
+              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/75">
+                Frappe is the framework underneath ERPNext, but it is also a strong
+                platform for custom operational software. TECHINCGLOBAL uses Frappe to
+                build extensions, portals, workflows, integrations, and full business
+                applications that stay aligned with real operating requirements.
+              </p>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <Button size="lg" asChild>
+                  <Link href="/contact">Discuss a Frappe Build</Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white/20 bg-white/5 text-white hover:bg-white/10 hover:text-white"
+                  asChild
+                >
+                  <Link href="/erpnext">See ERPNext Services</Link>
+                </Button>
+              </div>
+            </div>
+          </FadeUp>
+        </Container>
+      </section>
 
-            {/* Architecture Overview */}
-            <section className="section-padding">
-                <Container>
-                    <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-                        <FadeUp>
-                            <span className="text-xs font-semibold uppercase tracking-widest text-brand-blue">Core Concepts</span>
-                            <h2 className="mt-2 text-display-sm font-bold text-text-primary">
-                                Metadata-Driven Rapid Development
-                            </h2>
-                            <p className="mt-4 text-sm leading-relaxed text-text-secondary">
-                                Unlike traditional frameworks where you write models, views, and controllers, Frappe uses **DocTypes** — metadata definitions that automatically generate database tables, REST APIs, and client-side forms.
-                            </p>
+      <section className="section-padding bg-white border-b border-surface-border">
+        <Container>
+          <div className="grid gap-6 lg:grid-cols-3">
+            {frameworkPillars.map((pillar, index) => (
+              <FadeUp key={pillar.title} delay={index * 0.05}>
+                <div className="rounded-2xl border border-surface-border bg-[#F9FBFC] p-6 shadow-soft">
+                  <span className="text-[10px] font-semibold uppercase tracking-widest text-brand-teal">
+                    Framework Pillar
+                  </span>
+                  <h2 className="mt-2 text-xl font-bold text-text-primary">{pillar.title}</h2>
+                  <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                    {pillar.description}
+                  </p>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+        </Container>
+      </section>
 
-                            <ul className="mt-6 space-y-4">
-                                {[
-                                    { title: "DocTypes & Controllers", desc: "Define fields, linking logic, and Python controller scripts to handle triggers." },
-                                    { title: "Built-In Auth & Roles", desc: "Granular absolute permission controls at document and field levels." },
-                                    { title: "Automatic REST API", desc: "Every DocType is immediately available as an authenticated REST endpoint." },
-                                    { title: "Background Jobs", desc: "Integrated Redis / RQ queues for async task execution and triggers." }
-                                ].map((item) => (
-                                    <li key={item.title} className="flex items-start gap-3">
-                                        <div className="mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-brand-blue-pale text-brand-blue">
-                                            <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                                        </div>
-                                        <div>
-                                            <p className="text-sm font-bold text-text-primary">{item.title}</p>
-                                            <p className="text-xs text-text-secondary">{item.desc}</p>
-                                        </div>
-                                    </li>
-                                ))}
-                            </ul>
-                        </FadeUp>
-
-                        <FadeUp delay={0.15}>
-                            {/* Visual Representation of Frappe Desk/Workspace */}
-                            <div className="rounded-2xl border border-surface-border bg-white p-6 shadow-soft">
-                                <div className="border-b border-surface-border pb-4 mb-4 flex items-center justify-between">
-                                    <div className="flex items-center gap-2">
-                                        <div className="h-2 w-2 rounded-full bg-red-400" />
-                                        <div className="h-2 w-2 rounded-full bg-yellow-400" />
-                                        <div className="h-2 w-2 rounded-full bg-green-400" />
-                                    </div>
-                                    <span className="text-[10px] font-mono text-text-muted">frappe-workspace.desc</span>
-                                </div>
-
-                                <div className="space-y-3">
-                                    <div className="rounded-lg bg-[#F9FBFC] border border-surface-border p-3 flex items-center justify-between">
-                                        <span className="text-xs font-semibold text-text-secondary">Document Types</span>
-                                        <span className="text-xs text-brand-blue font-mono">DocType V13</span>
-                                    </div>
-                                    <div className="grid grid-cols-3 gap-2">
-                                        {['Form View', 'List View', 'Kanban'].map(view => (
-                                            <div key={view} className="rounded-lg border border-surface-border p-2 text-center bg-white shadow-sm">
-                                                <span className="text-[11px] font-medium text-text-primary">{view}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                    <div className="rounded-lg bg-surface p-3 border border-surface-border">
-                                        <div className="flex items-center justify-between text-[11px] mb-1">
-                                            <span className="text-text-secondary font-medium">Server Controller Script</span>
-                                            <span className="text-brand-teal">Python</span>
-                                        </div>
-                                        <pre className="text-[10px] font-mono text-text-primary leading-tight overflow-hidden">
-                                            {`def validate(self): \n  if self.total < 0:\n    frappe.throw("Invalid value")`}
-                                        </pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </FadeUp>
+      <section className="section-padding">
+        <Container>
+          <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <FadeUp>
+              <span className="text-xs font-semibold uppercase tracking-widest text-brand-blue">
+                What We Build
+              </span>
+              <h2 className="mt-2 text-display-sm font-bold text-text-primary">
+                Common Frappe development engagements
+              </h2>
+              <p className="mt-4 text-sm leading-relaxed text-text-secondary">
+                Frappe is well suited to systems that sit between spreadsheets and
+                heavyweight enterprise software. It gives us the structure to build
+                durable business applications without reimplementing permissions,
+                workflows, APIs, notifications, and reporting each time.
+              </p>
+              <div className="mt-8 grid gap-5 sm:grid-cols-2">
+                {whatWeBuild.map((group, index) => (
+                  <FadeUp key={group.title} delay={index * 0.05}>
+                    <div className="rounded-2xl border border-surface-border bg-white p-5 shadow-soft">
+                      <h3 className="text-base font-bold text-text-primary">{group.title}</h3>
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {group.items.map((item) => (
+                          <span
+                            key={item}
+                            className="rounded-full border border-surface-border bg-[#F9FBFC] px-3 py-1 text-[11px] font-medium text-text-secondary"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                </Container>
-            </section>
-            {/* Bench CLI & Deployment Core */}
-            <section className="section-padding bg-white border-y border-surface-border">
-                <Container>
-                    <FadeUp>
-                        <div className="text-center max-w-2xl mx-auto mb-12">
-                            <span className="text-xs font-semibold uppercase tracking-widest text-brand-teal">Management & DX</span>
-                            <h2 className="mt-2 text-display-sm font-bold text-text-primary">
-                                The Bench Framework CLI
-                            </h2>
-                            <p className="mt-4 text-sm text-text-secondary">
-                                Frappe relies on **Bench**, a unified command-line tool wrapping site environments, managing multi-tenant databases, and pushing app updates seamlessly.
-                            </p>
-                        </div>
+                  </FadeUp>
+                ))}
+              </div>
+            </FadeUp>
 
-                        <div className="grid gap-6 md:grid-cols-3">
-                            {[
-                                { title: "App Packaging", desc: "Easily integrate custom logic inside standard Python packages inside existing sites.", cmd: "bench get-app [repo]" },
-                                { title: "Multitenancy", desc: "Run 100+ mapped unique domain sites using a single Bench setup with isolated DB ports.", cmd: "bench set-config [key] [val]" },
-                                { title: "Bench Console", desc: "Expose safe transactional repl interfaces to test methods directly using site domains context.", cmd: "bench --site [domain] console" }
-                            ].map((box) => (
-                                <div key={box.title} className="rounded-xl border border-surface-border p-5 bg-[#F9FBFC] hover:shadow-soft transition-all duration-200">
-                                    <span className="text-xs font-bold text-brand-blue">{box.title}</span>
-                                    <p className="mt-2 text-xs text-text-secondary">{box.desc}</p>
-                                    <div className="mt-4 p-2 rounded bg-slate-900 font-mono text-[10px] text-slate-300">
-                                        $ {box.cmd}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </FadeUp>
-                </Container>
-            </section>
-
-            {/* Real-time & Services grid */}
-            <section className="section-padding">
-                <Container>
-                    <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-                        <FadeUp className="lg:order-2">
-                            <div className="rounded-2xl border border-slate-800 bg-[#0B1120] p-6 text-slate-400 shadow-2xl">
-                                <span className="text-[10px] uppercase font-bold tracking-wider text-brand-teal">Node.js Sync streams</span>
-                                <h3 className="mt-2 text-lg font-bold text-white">Socket.IO & Redis Bus</h3>
-                                <p className="mt-3 text-xs leading-relaxed text-slate-400">
-                                    Frappe natively pushes transactional triggers from Python directly onto Redis PUB/SUB channels which Node.js emits instantly across open active client sockets.
-                                </p>
-                                <div className="mt-5 space-y-2">
-                                    <div className="flex items-center justify-between p-2 rounded bg-slate-800/50 border border-slate-800">
-                                        <span className="text-xs font-mono text-slate-300">redis_queue: default</span>
-                                        <span className="text-[10px] text-green-400 font-bold">● Active</span>
-                                    </div>
-                                    <div className="flex items-center justify-between p-2 rounded bg-slate-800/50 border border-slate-800">
-                                        <span className="text-xs font-mono text-slate-300">socket_io: push_message</span>
-                                        <span className="text-[10px] text-brand-teal font-bold">Connected</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </FadeUp>
-
-                        <FadeUp className="lg:order-1">
-                            <span className="text-xs font-semibold uppercase tracking-widest text-brand-blue">Component Ecosystem</span>
-                            <h2 className="mt-2 text-display-sm font-bold text-text-primary">
-                                Real-Time Streams Built-In
-                            </h2>
-                            <p className="mt-4 text-sm leading-relaxed text-text-secondary">
-                                Unlike monolithic stacks having to hook custom sockets, Frappe coordinates asynchronous flows using tightly bonded sidecar queues natively out of the box.
-                            </p>
-                        </FadeUp>
+            <FadeUp delay={0.1}>
+              <div className="rounded-3xl border border-surface-border bg-white p-6 shadow-soft">
+                <div className="flex items-center justify-between border-b border-surface-border pb-4">
+                  <span className="text-xs font-semibold text-text-primary">Typical Frappe stack</span>
+                  <span className="text-[10px] font-semibold uppercase tracking-widest text-brand-teal">
+                    Business App
+                  </span>
+                </div>
+                <div className="mt-5 space-y-3">
+                  {[
+                    "DocTypes for the business entities and transaction lifecycle",
+                    "Role-based permissions and approval workflows",
+                    "Python server methods, validations, and background jobs",
+                    "Dashboards, reports, notifications, and print formats",
+                    "API integrations and portals where the process crosses systems",
+                  ].map((item) => (
+                    <div key={item} className="rounded-xl border border-surface-border bg-[#F9FBFC] p-4">
+                      <p className="text-sm leading-relaxed text-text-secondary">{item}</p>
                     </div>
-                </Container>
-            </section>
-        </div>
-    );
+                  ))}
+                </div>
+              </div>
+            </FadeUp>
+          </div>
+        </Container>
+      </section>
+
+      <section className="section-padding bg-slate-950 text-white">
+        <Container>
+          <FadeUp>
+            <div className="max-w-3xl">
+              <span className="text-xs font-semibold uppercase tracking-widest text-brand-teal">
+                Engineering Scope
+              </span>
+              <h2 className="mt-2 text-display-sm font-bold">
+                The main areas we engineer on Frappe
+              </h2>
+            </div>
+          </FadeUp>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            {engineeringCapabilities.map((capability, index) => (
+              <FadeUp key={capability.title} delay={index * 0.05}>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                  <h3 className="text-lg font-bold text-white">{capability.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/70">
+                    {capability.description}
+                  </p>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="section-padding bg-white border-y border-surface-border">
+        <Container>
+          <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+            <FadeUp>
+              <span className="text-xs font-semibold uppercase tracking-widest text-brand-blue">
+                Delivery Approach
+              </span>
+              <h2 className="mt-2 text-display-sm font-bold text-text-primary">
+                How TECHINCGLOBAL delivers Frappe projects
+              </h2>
+              <div className="mt-6 space-y-4">
+                {companyApproach.map((item, index) => (
+                  <div key={item.title} className="rounded-2xl border border-surface-border bg-[#F9FBFC] p-5 shadow-soft">
+                    <div className="flex items-center gap-3">
+                      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-blue text-xs font-bold text-white">
+                        {index + 1}
+                      </span>
+                      <h3 className="text-sm font-bold text-text-primary">{item.title}</h3>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                      {item.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </FadeUp>
+
+            <FadeUp delay={0.1}>
+              <div className="rounded-3xl border border-surface-border bg-brand-navy p-6 text-white shadow-soft">
+                <span className="text-xs font-semibold uppercase tracking-widest text-brand-teal">
+                  Best Use Cases
+                </span>
+                <div className="mt-5 space-y-4">
+                  {useCases.map((item) => (
+                    <div key={item} className="rounded-xl border border-white/10 bg-white/5 p-4">
+                      <p className="text-sm leading-relaxed text-white/75">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </FadeUp>
+          </div>
+        </Container>
+      </section>
+
+      <section className="section-padding bg-brand-navy">
+        <Container size="sm" className="text-center">
+          <FadeUp>
+            <h2 className="text-display-sm font-bold text-white">
+              Need a custom workflow, portal, or internal application on Frappe?
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-white/70">
+              We can help you define the scope, shape the data model, and build a Frappe
+              solution that improves control and speed without creating another fragile
+              tool in the stack.
+            </p>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
+              <Button size="lg" asChild>
+                <Link href="/contact">Start a Frappe Project</Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 bg-white/5 text-white hover:bg-white/10 hover:text-white"
+                asChild
+              >
+                <Link href="/services/frappe-customization-development">View Service Scope</Link>
+              </Button>
+            </div>
+          </FadeUp>
+        </Container>
+      </section>
+    </div>
+  );
 }

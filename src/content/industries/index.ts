@@ -45,6 +45,22 @@ export const industries: Industry[] = [
       'Gain accurate product costing with real-time tracking of material, labor, and overhead',
       'Improve on-time delivery performance with live production dashboards and exception alerts',
     ],
+    useCases: [
+      'Engineer-to-order and make-to-stock manufacturing environments that need accurate BOM, routing, and revision control',
+      'Factory operations that want production, inventory, procurement, maintenance, and finance on one dataset instead of in separate systems',
+      'Quality-driven operations that need batch traceability, non-conformance workflows, and structured inspection records',
+    ],
+    companyApproach: [
+      'TECHINCGLOBAL starts by mapping your product structures, planning rules, costing logic, and shop-floor transactions before any configuration is finalized.',
+      'We stage manufacturing rollouts in practical layers: item and BOM governance first, then MRP and job execution, then quality, dashboards, and automation.',
+      'Where standard ERPNext needs extension, we build focused Frappe workflows for approvals, barcode flows, machine data capture, or customer-specific documentation.',
+    ],
+    kpis: [
+      'Production plan adherence',
+      'Work-in-progress visibility by workstation and order',
+      'Scrap, rework, and quality failure trends',
+      'Actual versus standard product costing',
+    ],
     keyModules: ['Production', 'Quality', 'Inventory', 'Maintenance'],
     stats: [
       { value: "25-40%", label: "Lead Time Reduction" },
@@ -98,6 +114,22 @@ export const industries: Industry[] = [
       'Optimize delivery routes and fleet utilization to lower transportation costs',
       'Improve customer satisfaction with real-time delivery tracking and automated notifications',
       'Scale to new warehouses and distribution centers without adding administrative overhead',
+    ],
+    useCases: [
+      'Import, wholesale, and regional distribution businesses managing multiple warehouses, field sales teams, and route-based delivery',
+      'Growing operators that need barcode-driven receiving, picking, packing, and dispatch with real-time inventory accuracy',
+      'Organizations that require integration between ERP, 3PL providers, courier partners, e-commerce channels, and finance',
+    ],
+    companyApproach: [
+      'TECHINCGLOBAL defines a clean warehouse model first: item master discipline, unit conversions, batch controls, reorder logic, and transfer rules.',
+      'We design fulfillment around your actual process, including pick lists, route plans, dispatch checkpoints, proof-of-delivery capture, and exception handling.',
+      'For complex logistics environments, we connect ERPNext to courier APIs, handheld barcode devices, customer portals, and finance reports through Frappe integrations.',
+    ],
+    kpis: [
+      'Inventory accuracy by warehouse',
+      'Order-to-dispatch cycle time',
+      'Perfect order fulfillment rate',
+      'Vehicle and route utilization',
     ],
     keyModules: ['Multi-Warehouse', 'Automated Fulfillment', 'Fleet Management', '3PL Connectors'],
     stats: [
@@ -153,6 +185,22 @@ export const industries: Industry[] = [
       'Accelerate month-end closing with automated sales and payment reconciliation',
       'Scale from a single store to a multi-location retail chain on one platform',
     ],
+    useCases: [
+      'Retail businesses running physical outlets, online stores, social commerce, and distributor sales in parallel',
+      'Multi-branch operations that need centralized pricing, promotions, taxation, and stock visibility across channels',
+      'Teams that want customer, inventory, sales, and accounting to reconcile automatically instead of through end-of-day spreadsheets',
+    ],
+    companyApproach: [
+      'TECHINCGLOBAL aligns your catalog, branches, tax rules, promotions, and payment methods before rollout so channel data stays consistent from day one.',
+      'We configure localized POS, branch controls, sales returns, exchange handling, and outlet performance dashboards around your retail operating model.',
+      'When your stack includes storefronts, delivery apps, or loyalty systems, we extend ERPNext with Frappe-based middleware and workflows rather than forcing manual reconciliation.',
+    ],
+    kpis: [
+      'Stock availability across channels',
+      'Gross margin by branch, item, and campaign',
+      'POS-to-accounting reconciliation cycle time',
+      'Customer repeat purchase and loyalty usage',
+    ],
     keyModules: ['Omnichannel POS', 'E-Commerce Sync', 'Loyalty Engine', 'Auto-Reconciliation'],
     stats: [
       { value: "30-50%", label: "Stockout Reduction" },
@@ -206,6 +254,22 @@ export const industries: Industry[] = [
       'Accelerate invoicing from weeks to days with automated timesheet-to-invoice workflows',
       'Make data-driven staffing decisions with utilization dashboards and demand forecasts',
       'Deliver a better client experience with project portals, milestone tracking, and transparent billing',
+    ],
+    useCases: [
+      'Consulting, implementation, managed services, digital agencies, and engineering firms billing by milestone, retainer, or timesheet',
+      'Service organizations that need project visibility, resource planning, expense recovery, and margin tracking in a single system',
+      'Leaders who need utilization, pipeline, and revenue forecasting without waiting for month-end spreadsheets',
+    ],
+    companyApproach: [
+      'TECHINCGLOBAL structures projects, task hierarchies, timesheets, expense policies, and billing rules around the way your teams actually deliver work.',
+      'We connect CRM, project delivery, invoicing, and finance so commercial teams, operations, and leadership are looking at the same numbers.',
+      'For firms with unique approvals or service delivery workflows, we add Frappe automations for milestone signoff, change requests, utilization alerts, and client reporting.',
+    ],
+    kpis: [
+      'Billable utilization by team and role',
+      'Project gross margin and cost-to-complete',
+      'Timesheet compliance and billing turnaround',
+      'Forecast versus actual revenue by portfolio',
     ],
     keyModules: ['Project Accounting', 'Resource Management', 'Time Tracking', 'Automated Billing'],
     stats: [
@@ -261,6 +325,22 @@ export const industries: Industry[] = [
       'Improve cash flow management with milestone billing automation and retention tracking',
       'Gain a consolidated view of profitability across all active projects and properties',
     ],
+    useCases: [
+      'Contractors managing multiple sites, subcontractors, equipment pools, and milestone-based billing',
+      'Developers and real estate operators needing project cost visibility, procurement discipline, and fixed-asset tracking',
+      'Organizations that need stronger control over variation orders, retention, claims, and site-level consumption',
+    ],
+    companyApproach: [
+      'TECHINCGLOBAL models project budgets, BOQ-linked procurement, site warehouses, and subcontractor certification flows around the commercial structure of each job.',
+      'We phase implementation to stabilize procurement and cost capture first, then equipment, billing, and management dashboards.',
+      'Where project governance depends on extra approvals, document packs, or claim workflows, we build Frappe extensions that keep those controls inside the same operating system.',
+    ],
+    kpis: [
+      'Budget versus actual cost by project and cost code',
+      'Subcontractor claim cycle time',
+      'Equipment utilization and downtime',
+      'Certified billing versus cash collection',
+    ],
     keyModules: ['Cost Tracking', 'Subcontracting Management', 'Asset Tracking', 'Milestone Billing'],
     stats: [
       { value: "20-35%", label: "Cost Overrun Reduction" },
@@ -314,6 +394,22 @@ export const industries: Industry[] = [
       'Accelerate revenue collection with automated billing and insurance claim processing',
       'Achieve compliance readiness with built-in audit trails, access controls, and data encryption',
       'Enhance patient experience with appointment scheduling, reminders, and self-service portals',
+    ],
+    useCases: [
+      'Healthcare groups that need appointment, patient, pharmacy, billing, and inventory workflows aligned across departments',
+      'Facilities managing consumables and pharmaceuticals with expiry, batch, and replenishment controls',
+      'Organizations that need stronger security, audit trails, and role-based access over operational and financial data',
+    ],
+    companyApproach: [
+      'TECHINCGLOBAL starts with operational process mapping, identifying how appointments, clinical records, pharmacy, stores, billing, and finance must connect.',
+      'We keep implementations pragmatic: secure role design, pharmacy controls, billing logic, and reporting first, then patient portals, automation, and analytics.',
+      'Where clinical or administrative processes require custom workflows, Frappe gives us a clean way to build controlled forms, approvals, and integration layers without fragmenting the platform.',
+    ],
+    kpis: [
+      'Patient throughput and wait time trends',
+      'Pharmacy stock expiry and replenishment accuracy',
+      'Claim processing and receivables aging',
+      'Audit trail completeness and access compliance',
     ],
     keyModules: ['Electronic Records', 'Pharmacy Management', 'Clinical Billing', 'Audit Trails'],
     stats: [
@@ -369,6 +465,22 @@ export const industries: Industry[] = [
       'Make data-driven decisions with dashboards covering enrollment, finances, and academic performance',
       'Scale from a single institution to a multi-campus group on a unified platform',
     ],
+    useCases: [
+      'Schools, institutes, and training organizations managing admissions, student records, fees, attendance, and staff administration',
+      'Multi-campus environments that need a common operating model with campus-level reporting and financial control',
+      'Institutions looking to modernize communication with students and parents through structured portals and digital workflows',
+    ],
+    companyApproach: [
+      'TECHINCGLOBAL defines the academic and financial operating model together: programs, batches, fee structures, scholarship logic, approvals, and reporting expectations.',
+      'We implement in layers so admissions, student records, finance, and academic planning remain stable before introducing portals, integrations, and automation.',
+      'When institutions need non-standard approval chains, enrollment workflows, or custom reporting, we extend Frappe cleanly without compromising upgradeability.',
+    ],
+    kpis: [
+      'Enrollment conversion and retention',
+      'Fee recovery and overdue balances',
+      'Attendance, timetable, and faculty utilization',
+      'Administrative turnaround time by department',
+    ],
     keyModules: ['Student Lifecycle', 'Fee Management', 'Academic Planning', 'Parent Portals'],
     stats: [
       { value: "40-50%", label: "Paperwork Load Reduction" },
@@ -422,6 +534,22 @@ export const industries: Industry[] = [
       'Reduce customs clearance delays with pre-configured document templates and compliance checks',
       'Improve supplier negotiation with complete visibility into historical pricing, lead times, and quality metrics',
       'Accelerate month-end closing with automated foreign currency revaluation and gain/loss posting',
+    ],
+    useCases: [
+      'Importers and exporters managing supplier orders, shipping milestones, customs charges, and landed cost calculations across currencies',
+      'Trading businesses that need tighter control over document expiry, LC exposure, and margin visibility by shipment or product line',
+      'Organizations handling a mix of local sales, export sales, and group-company settlements from one finance backbone',
+    ],
+    companyApproach: [
+      'TECHINCGLOBAL designs item, supplier, port, and finance structures so landed cost, foreign currency exposure, and clearing transactions stay traceable end to end.',
+      'We align procurement, shipping, warehouse receipt, cost absorption, and finance close processes instead of treating import operations as isolated back-office work.',
+      'For customers with banking, customs, freight, or document workflow needs, we use Frappe to build the exact orchestration layer required without relying on brittle spreadsheets.',
+    ],
+    kpis: [
+      'Landed margin by item and shipment',
+      'Foreign currency exposure and revaluation accuracy',
+      'Clearance cycle time and document readiness',
+      'Supplier lead time and purchase variance trends',
     ],
     keyModules: ['Multi-currency', 'Landed Cost Tracking', 'LC Management', 'Compliance Templates'],
     stats: [

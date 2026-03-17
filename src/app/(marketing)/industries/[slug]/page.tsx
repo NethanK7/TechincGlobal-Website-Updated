@@ -258,6 +258,55 @@ export default async function IndustryDetailPage({ params }: Props) {
                 </Container>
             </section>
 
+            {(industry.useCases || industry.companyApproach) && (
+                <section className="section-padding bg-white border-b border-surface-border">
+                    <Container>
+                        <div className="grid gap-8 lg:grid-cols-2">
+                            {industry.useCases && (
+                                <FadeUp>
+                                    <div className="rounded-2xl border border-surface-border bg-[#F9FBFC] p-6 shadow-soft">
+                                        <span className="text-xs font-semibold uppercase tracking-widest text-brand-blue">Best Fit</span>
+                                        <h2 className="mt-2 text-display-sm font-bold text-text-primary">
+                                            Where This Industry Usually Needs The Most Help
+                                        </h2>
+                                        <ul className="mt-6 space-y-4">
+                                            {industry.useCases.map((item, i) => (
+                                                <li key={i} className="flex items-start gap-3">
+                                                    <span className="mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-brand-blue-pale text-brand-blue">
+                                                        <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3} aria-hidden="true">
+                                                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                                        </svg>
+                                                    </span>
+                                                    <span className="text-sm leading-relaxed text-text-secondary">{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </FadeUp>
+                            )}
+
+                            {industry.companyApproach && (
+                                <FadeUp delay={0.1}>
+                                    <div className="rounded-2xl border border-surface-border bg-brand-navy p-6 text-white shadow-soft">
+                                        <span className="text-xs font-semibold uppercase tracking-widest text-brand-teal">Our Delivery Approach</span>
+                                        <h2 className="mt-2 text-display-sm font-bold">
+                                            How TECHINCGLOBAL Implements For {industry.title}
+                                        </h2>
+                                        <div className="mt-6 space-y-4">
+                                            {industry.companyApproach.map((item, i) => (
+                                                <div key={i} className="rounded-xl border border-white/10 bg-white/5 p-4">
+                                                    <p className="text-sm leading-relaxed text-white/75">{item}</p>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </FadeUp>
+                            )}
+                        </div>
+                    </Container>
+                </section>
+            )}
+
             {/* Workspace Modules ("Frappe Vibe") */}
             {industry.keyModules && (
                 <section className="section-padding bg-[#F9FBFC] border-y border-surface-border" aria-labelledby="modules-heading">
@@ -287,6 +336,35 @@ export default async function IndustryDetailPage({ params }: Props) {
                                             <p className="text-sm font-bold text-text-primary">{module}</p>
                                             <span className="text-[10px] font-semibold text-brand-teal uppercase tracking-wider">Module</span>
                                         </div>
+                                    </div>
+                                </FadeUp>
+                            ))}
+                        </div>
+                    </Container>
+                </section>
+            )}
+
+            {industry.kpis && (
+                <section className="section-padding bg-white border-t border-surface-border" aria-labelledby="kpis-heading">
+                    <Container>
+                        <FadeUp>
+                            <div className="max-w-3xl">
+                                <span className="text-xs font-semibold uppercase tracking-widest text-brand-blue">Operational Control</span>
+                                <h2 id="kpis-heading" className="mt-2 text-display-sm font-bold text-text-primary">
+                                    Metrics We Typically Put On Leadership Dashboards
+                                </h2>
+                                <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                                    We do not stop at transaction capture. Every implementation is designed to expose the operational and financial indicators leadership teams actually use to run the business.
+                                </p>
+                            </div>
+                        </FadeUp>
+
+                        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                            {industry.kpis.map((kpi, i) => (
+                                <FadeUp key={kpi} delay={i * 0.05}>
+                                    <div className="rounded-2xl border border-surface-border bg-[#F9FBFC] p-5 shadow-soft">
+                                        <span className="text-[10px] font-semibold uppercase tracking-widest text-brand-teal">KPI {i + 1}</span>
+                                        <p className="mt-2 text-sm font-bold leading-relaxed text-text-primary">{kpi}</p>
                                     </div>
                                 </FadeUp>
                             ))}
