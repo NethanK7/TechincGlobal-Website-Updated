@@ -58,7 +58,8 @@ export function Sidebar() {
             <nav className="flex-1 flex flex-col items-center gap-4 w-full px-2" aria-label="Sidebar navigation">
                 {mainNavItems.map((item) => {
                     const Icon = iconMap[item.label] || LayoutDashboard;
-                    const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
+                    const primaryHref = item.href !== "#" ? item.href : item.children?.[0]?.href ?? "/";
+                    const isActive = pathname === primaryHref || (primaryHref !== "/" && pathname.startsWith(primaryHref));
                     const hasChildren = item.children && item.children.length > 0;
                     const isOpen = activeGroup === item.label;
 
@@ -70,7 +71,7 @@ export function Sidebar() {
                             onMouseLeave={handleMouseLeave}
                         >
                             <Link
-                                href={hasChildren ? "#" : item.href}
+                                href={primaryHref}
                                 className={cn(
                                     "flex items-center justify-center h-10 w-10 rounded-xl transition-all duration-200 relative",
                                     isActive
@@ -97,7 +98,9 @@ export function Sidebar() {
                                     className="absolute left-full top-0 ml-3 w-56 rounded-xl bg-[#0F172A] border border-slate-800 p-2 shadow-2xl space-y-0.5 z-50 animate-in fade-in slide-in-from-left-2 duration-150"
                                 >
                                     <div className="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-500 border-b border-slate-800/60 mb-1">
-                                        {item.label}
+                                        <Link href={primaryHref} className="text-slate-400 hover:text-white transition-colors">
+                                            {item.label}
+                                        </Link>
                                     </div>
                                     <div className="max-h-80 overflow-y-auto space-y-0.5 custom-scrollbar">
                                         {item.children?.map((child) => (
@@ -121,18 +124,25 @@ export function Sidebar() {
                 })}
             </nav>
 
-            {/* Bottom Toggle Out */}
-            <div className="mt-auto px-2 w-full flex justify-center border-t border-slate-800/60 pt-4">
-                <button
-                    type="button"
-                    onClick={() => setViewMode("top")}
-                    className="flex items-center justify-center h-9 w-9 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white transition-all duration-200"
-                    title="Switch to Top Navbar"
-                >
-                    <ArrowLeftSquare className="h-4.5 w-4.5" />
-                </button>
+            <div className="mt-auto w-full border-t border-slate-800/60 px-2 pt-4">
+                <div className="flex flex-col items-center gap-3">
+                    <Link
+                        href="/contact"
+                        className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-blue text-[11px] font-semibold text-white transition-all hover:bg-brand-blue-light"
+                        title="Talk to us"
+                    >
+                        Go
+                    </Link>
+                    <button
+                        type="button"
+                        onClick={() => setViewMode("top")}
+                        className="flex h-9 w-9 items-center justify-center rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white transition-all duration-200"
+                        title="Switch to Top Navbar"
+                    >
+                        <ArrowLeftSquare className="h-4.5 w-4.5" />
+                    </button>
+                </div>
             </div>
         </aside>
     );
 }
-

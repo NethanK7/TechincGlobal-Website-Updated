@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2563eb" />
+    <title>Offline | TECHINCGLOBAL</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #eff6ff;
+        --panel: rgba(255, 255, 255, 0.88);
+        --text: #0f172a;
+        --muted: #475569;
+        --accent: #2563eb;
+        --border: rgba(148, 163, 184, 0.25);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        font-family: Inter, system-ui, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, rgba(37, 99, 235, 0.18), transparent 36%),
+          linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(100%, 560px);
+        padding: 32px;
+        border: 1px solid var(--border);
+        border-radius: 28px;
+        background: var(--panel);
+        backdrop-filter: blur(18px);
+        box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 18px;
+        background: var(--accent);
+        color: white;
+        font-weight: 800;
+      }
+
+      h1 {
+        margin: 20px 0 12px;
+        font-size: clamp(2rem, 5vw, 2.75rem);
+        line-height: 1;
+        letter-spacing: -0.05em;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      a {
+        display: inline-flex;
+        margin-top: 24px;
+        border-radius: 999px;
+        padding: 12px 18px;
+        background: #0f172a;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="badge">TG</div>
+      <h1>You are offline.</h1>
+      <p>
+        TECHINCGLOBAL is still installed, but this page needs a network connection to load fresh
+        content. Reconnect and try again.
+      </p>
+      <a href="/">Retry</a>
+    </main>
+  </body>
+  </html>

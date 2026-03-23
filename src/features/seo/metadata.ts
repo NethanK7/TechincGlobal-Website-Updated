@@ -29,10 +29,10 @@ interface CreatePageMetadataInput {
  * @example
  * ```ts
  * export const metadata = createPageMetadata({
- *   title: "ERPNext Implementation",
- *   description: "End-to-end ERPNext implementation services...",
+ *   title: "Frappe ERP Implementation",
+ *   description: "End-to-end Frappe ERP implementation services...",
  *   path: "/services/erpnext-implementation",
- *   keywords: ["ERPNext", "ERP implementation", "Sri Lanka"],
+ *   keywords: ["Frappe ERP", "ERP implementation", "Sri Lanka"],
  * });
  * ```
  */

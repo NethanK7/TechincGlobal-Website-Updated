@@ -32,7 +32,7 @@ function AssessmentCta() {
                     <div className="flex-1">
                         <FadeUp>
                             <p className="text-sm font-semibold uppercase tracking-widest text-white/70">
-                                Free ERP Readiness Assessment
+                                Free consultation for free report
                             </p>
                             <h2
                                 id="assessment-cta-heading"
@@ -41,9 +41,7 @@ function AssessmentCta() {
                                 Is Your Business Ready for ERP Transformation?
                             </h2>
                             <p className="mt-4 text-lg leading-relaxed text-white/80">
-                                Answer 10 targeted questions about your current systems, team
-                                readiness, and business goals. Get an instant readiness score
-                                and personalised recommendations — no commitment required.
+                                We will help you understand and verify your requirements.
                             </p>
                             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
                                 <Button

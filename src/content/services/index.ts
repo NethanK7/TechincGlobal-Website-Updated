@@ -2,14 +2,14 @@ import type { Service } from '@/types';
 
 export const services: Service[] = [
   // -------------------------------------------------------------------------
-  // 1. ERPNext Implementation
+  // 1. Frappe ERP Implementation
   // -------------------------------------------------------------------------
   {
     slug: 'erpnext-implementation',
-    title: 'ERPNext Implementation',
-    shortTitle: 'Implementation',
+    title: 'NextGen ERP Implementation',
+    shortTitle: 'NextGen ERP',
     description:
-      'End-to-end ERPNext deployment tailored to your business — from requirements analysis and configuration through data migration, user training, and go-live support. Our NXTGEN Agile methodology ensures on-time delivery with minimal operational disruption.',
+      'End-to-end Frappe ERP deployment tailored to your business — from requirements analysis and configuration through data migration, user training, and go-live support. Our NXTGEN Agile methodology ensures on-time delivery with minimal operational disruption.',
     icon: 'Rocket',
     benefits: [
       'Go live in as few as 8 weeks with our accelerated deployment track',
@@ -19,7 +19,7 @@ export const services: Service[] = [
       'Future-proof your operations with a fully open-source, community-backed platform',
     ],
     deliverables: [
-      'Fully configured ERPNext instance mapped to your chart of accounts, warehouses, and workflows',
+      'Fully configured Frappe ERP instance mapped to your chart of accounts, warehouses, and workflows',
       'Complete data migration from legacy systems with validation reports',
       'Role-based access control and security configuration',
       'Integration with existing email, payment, and third-party systems',
@@ -30,19 +30,19 @@ export const services: Service[] = [
         number: 1,
         title: 'Discovery & Requirements Mapping',
         description:
-          'We conduct stakeholder interviews, document your current processes, and translate business requirements into a detailed ERPNext solution blueprint.',
+          'We conduct stakeholder interviews, document your current processes, and translate business requirements into a detailed Frappe ERP solution blueprint.',
       },
       {
         number: 2,
         title: 'Configuration & Customization',
         description:
-          'Your ERPNext instance is configured to match your organizational structure, approval hierarchies, pricing rules, and reporting needs — with custom doctypes where standard modules fall short.',
+          'Your Frappe ERP instance is configured to match your organizational structure, approval hierarchies, pricing rules, and reporting needs — with custom doctypes where standard modules fall short.',
       },
       {
         number: 3,
         title: 'Data Migration & Validation',
         description:
-          'Master data, opening balances, and transactional history are extracted, cleansed, transformed, and loaded into ERPNext with line-by-line reconciliation.',
+          'Master data, opening balances, and transactional history are extracted, cleansed, transformed, and loaded into Frappe ERP with line-by-line reconciliation.',
       },
       {
         number: 4,
@@ -59,7 +59,7 @@ export const services: Service[] = [
     ],
     faqs: [
       {
-        question: 'How long does a typical ERPNext implementation take?',
+        question: 'How long does a typical Frappe ERP implementation take?',
         answer:
           'Most mid-market implementations complete within 10 to 16 weeks. The timeline depends on the number of modules, complexity of data migration, and the level of customization required. Our NXTGEN methodology includes time-boxed sprints that keep projects on schedule.',
       },
@@ -69,19 +69,19 @@ export const services: Service[] = [
           'We plan the production cutover during a weekend or low-activity period and run parallel systems when necessary. Our hypercare team is on-site during the first two weeks post-go-live to address any issues immediately, ensuring minimal disruption to your daily operations.',
       },
       {
-        question: 'Can ERPNext handle our specific local compliance requirements?',
+        question: 'Can Frappe ERP handle our specific local compliance requirements?',
         answer:
-          'Yes. ERPNext supports multi-currency accounting, localized tax configurations, and statutory reporting. As an authorized Frappe partner based in Sri Lanka, we have deep experience configuring the system for local VAT, SVAT, and withholding tax requirements as well as Central Bank reporting.',
+          'Yes. Frappe ERP supports multi-currency accounting, localized tax configurations, and statutory reporting. As an authorized Frappe partner based in Sri Lanka, we have deep experience configuring the system for local VAT, SVAT, and withholding tax requirements as well as Central Bank reporting.',
       },
       {
         question: 'What happens after go-live?',
         answer:
-          'Every implementation includes a 30-day hypercare period with priority support. Beyond that, we offer ongoing managed support plans that cover system monitoring, minor enhancements, user support, and version upgrades to keep your ERPNext instance running at peak performance.',
+          'Every implementation includes a 30-day hypercare period with priority support. Beyond that, we offer ongoing managed support plans that cover system monitoring, minor enhancements, user support, and version upgrades to keep your Frappe ERP instance running at peak performance.',
       },
     ],
-    metaTitle: 'ERPNext Implementation Services | TECHINCGLOBAL',
+    metaTitle: 'Frappe ERP Implementation Services | TECHINCGLOBAL',
     metaDescription:
-      'End-to-end ERPNext implementation by an authorized Frappe partner. From requirements analysis through go-live and hypercare — delivered with our proven NXTGEN Agile methodology.',
+      'End-to-end Frappe ERP implementation by an authorized Frappe partner. From requirements analysis through go-live and hypercare — delivered with our proven NXTGEN Agile methodology.',
   },
 
   // -------------------------------------------------------------------------
@@ -89,16 +89,16 @@ export const services: Service[] = [
   // -------------------------------------------------------------------------
   {
     slug: 'frappe-customization-development',
-    title: 'Frappe Customization & Development',
-    shortTitle: 'Customization',
+    title: 'Frappe Implementation',
+    shortTitle: 'Frappe Implementation',
     description:
-      'When out-of-the-box ERPNext modules need to go further, our Frappe-certified developers build custom applications, doctypes, and integrations that extend the platform to fit your exact business logic — without compromising upgrade compatibility.',
+      'When out-of-the-box Frappe ERP modules need to go further, our Frappe-certified developers build custom applications, doctypes, and integrations that extend the platform to fit your exact business logic — without compromising upgrade compatibility.',
     icon: 'Code',
     benefits: [
       'Get purpose-built features that match your unique workflows instead of forcing workarounds',
-      'Maintain full upgrade compatibility with upstream ERPNext releases',
+      'Maintain full upgrade compatibility with upstream Frappe ERP releases',
       'Automate repetitive tasks with custom server scripts and scheduled jobs',
-      'Connect ERPNext to any external system through well-documented REST APIs',
+      'Connect Frappe ERP to any external system through well-documented REST APIs',
       'Leverage the Frappe framework\'s built-in permissions, versioning, and audit trail',
     ],
     deliverables: [
@@ -119,7 +119,7 @@ export const services: Service[] = [
         number: 2,
         title: 'Solution Architecture',
         description:
-          'Our architects design the data model, API contracts, and UI wireframes, ensuring the solution integrates cleanly with existing ERPNext modules and respects the framework\'s conventions.',
+          'Our architects design the data model, API contracts, and UI wireframes, ensuring the solution integrates cleanly with existing Frappe ERP modules and respects the framework\'s conventions.',
       },
       {
         number: 3,
@@ -136,9 +136,9 @@ export const services: Service[] = [
     ],
     faqs: [
       {
-        question: 'Will custom apps break when ERPNext is upgraded?',
+        question: 'Will custom apps break when Frappe ERP is upgraded?',
         answer:
-          'We build custom applications following Frappe\'s official app architecture, which isolates customizations from core code. This means your custom apps remain compatible through standard ERPNext version upgrades. We also include upgrade testing as part of our support plans.',
+          'We build custom applications following Frappe\'s official app architecture, which isolates customizations from core code. This means your custom apps remain compatible through standard Frappe ERP version upgrades. We also include upgrade testing as part of our support plans.',
       },
       {
         question: 'Can you build mobile-friendly custom interfaces?',
@@ -153,7 +153,7 @@ export const services: Service[] = [
     ],
     metaTitle: 'Frappe Customization & Custom Development | TECHINCGLOBAL',
     metaDescription:
-      'Extend ERPNext with custom Frappe applications, doctypes, workflows, and API integrations. Built by certified Frappe developers with full upgrade compatibility.',
+      'Extend Frappe ERP with custom Frappe applications, doctypes, workflows, and API integrations. Built by certified Frappe developers with full upgrade compatibility.',
   },
 
   // -------------------------------------------------------------------------
@@ -175,7 +175,7 @@ export const services: Service[] = [
     ],
     deliverables: [
       'Process maps documenting current-state and future-state workflows',
-      'Configured ERPNext workflow rules with multi-level approval chains',
+      'Configured Frappe ERP workflow rules with multi-level approval chains',
       'Automated email and SMS notifications triggered by business events',
       'Scheduled server scripts for recurring tasks such as report generation and data sync',
       'Process performance dashboards with SLA tracking and exception alerts',
@@ -197,7 +197,7 @@ export const services: Service[] = [
         number: 3,
         title: 'Build & Configure',
         description:
-          'Automation rules are implemented using ERPNext workflows, server scripts, and where necessary, custom Frappe apps — with full test coverage.',
+          'Automation rules are implemented using Frappe ERP workflows, server scripts, and where necessary, custom Frappe apps — with full test coverage.',
       },
       {
         number: 4,
@@ -215,7 +215,7 @@ export const services: Service[] = [
       {
         question: 'Can you automate processes that involve external parties?',
         answer:
-          'Yes. We can automate supplier notifications, customer communication, and partner data exchanges using ERPNext\'s built-in email integration, webhooks, and API connectors. Portal-based workflows also allow external parties to interact directly with your system.',
+          'Yes. We can automate supplier notifications, customer communication, and partner data exchanges using Frappe ERP\'s built-in email integration, webhooks, and API connectors. Portal-based workflows also allow external parties to interact directly with your system.',
       },
       {
         question: 'How do we measure the ROI of automation?',
@@ -225,7 +225,7 @@ export const services: Service[] = [
     ],
     metaTitle: 'Business Process Automation Services | TECHINCGLOBAL',
     metaDescription:
-      'Automate manual workflows, approval chains, and document routing with ERPNext. Reduce cycle times by up to 70% and enforce compliance through digital process automation.',
+      'Automate manual workflows, approval chains, and document routing with Frappe ERP. Reduce cycle times by up to 70% and enforce compliance through digital process automation.',
   },
 
   // -------------------------------------------------------------------------
@@ -236,7 +236,7 @@ export const services: Service[] = [
     title: 'Legacy System Modernization',
     shortTitle: 'Modernization',
     description:
-      'Migrate from outdated ERP, accounting, or bespoke systems to a modern ERPNext platform without losing years of critical business data. Our structured migration methodology ensures continuity, accuracy, and confidence in every transition.',
+      'Migrate from outdated ERP, accounting, or bespoke systems to a modern Frappe ERP platform without losing years of critical business data. Our structured migration methodology ensures continuity, accuracy, and confidence in every transition.',
     icon: 'RefreshCcw',
     benefits: [
       'Eliminate vendor lock-in and unsustainable licensing fees from legacy platforms',
@@ -263,7 +263,7 @@ export const services: Service[] = [
         number: 2,
         title: 'Data Mapping & Cleansing',
         description:
-          'Source data fields are mapped to ERPNext doctypes with transformation rules. Duplicate, orphaned, and inconsistent records are flagged for cleansing before migration.',
+          'Source data fields are mapped to Frappe ERP doctypes with transformation rules. Duplicate, orphaned, and inconsistent records are flagged for cleansing before migration.',
       },
       {
         number: 3,
@@ -288,7 +288,7 @@ export const services: Service[] = [
       {
         question: 'Can you migrate data from any legacy system?',
         answer:
-          'We have migrated data from SAP Business One, Oracle, Tally, QuickBooks, MYOB, Sage, custom-built systems, and even spreadsheet-based operations. As long as data can be exported in any structured format (CSV, SQL, XML, API), we can map and migrate it into ERPNext.',
+          'We have migrated data from SAP Business One, Oracle, Tally, QuickBooks, MYOB, Sage, custom-built systems, and even spreadsheet-based operations. As long as data can be exported in any structured format (CSV, SQL, XML, API), we can map and migrate it into Frappe ERP.',
       },
       {
         question: 'How do you ensure no data is lost during migration?',
@@ -308,7 +308,7 @@ export const services: Service[] = [
     ],
     metaTitle: 'Legacy System Modernization & ERP Migration | TECHINCGLOBAL',
     metaDescription:
-      'Migrate from SAP, Tally, QuickBooks, or bespoke systems to ERPNext with zero data loss. Structured migration methodology with parallel running and validated data integrity.',
+      'Migrate from SAP, Tally, QuickBooks, or bespoke systems to Frappe ERP with zero data loss. Structured migration methodology with parallel running and validated data integrity.',
   },
 
   // -------------------------------------------------------------------------
@@ -319,7 +319,7 @@ export const services: Service[] = [
     title: 'System Integration',
     shortTitle: 'Integration',
     description:
-      'Connect ERPNext to the rest of your technology ecosystem — payment gateways, e-commerce platforms, banking systems, logistics providers, and government portals. We build reliable, secure integrations that keep data flowing in real time.',
+      'Connect Frappe ERP to the rest of your technology ecosystem — payment gateways, e-commerce platforms, banking systems, logistics providers, and government portals. We build reliable, secure integrations that keep data flowing in real time.',
     icon: 'Plug',
     benefits: [
       'Eliminate manual data re-entry between disconnected systems',
@@ -340,7 +340,7 @@ export const services: Service[] = [
         number: 1,
         title: 'Integration Landscape Assessment',
         description:
-          'We catalog every system that needs to communicate with ERPNext, document current data flows, and identify the optimal integration pattern for each connection.',
+          'We catalog every system that needs to communicate with Frappe ERP, document current data flows, and identify the optimal integration pattern for each connection.',
       },
       {
         number: 2,
@@ -363,14 +363,14 @@ export const services: Service[] = [
     ],
     faqs: [
       {
-        question: 'Which payment gateways can you integrate with ERPNext?',
+        question: 'Which payment gateways can you integrate with Frappe ERP?',
         answer:
-          'We have production experience integrating ERPNext with Stripe, PayHere, LankaPay, and direct bank payment APIs. We can also integrate with any payment gateway that offers a REST or SOAP API, including local Sri Lankan gateways and international processors.',
+          'We have production experience integrating Frappe ERP with Stripe, PayHere, LankaPay, and direct bank payment APIs. We can also integrate with any payment gateway that offers a REST or SOAP API, including local Sri Lankan gateways and international processors.',
       },
       {
-        question: 'Can ERPNext integrate with our e-commerce platform?',
+        question: 'Can Frappe ERP integrate with our e-commerce platform?',
         answer:
-          'Yes. ERPNext has built-in connectors for WooCommerce and Shopify, and we have built custom integrations with Magento, BigCommerce, and bespoke e-commerce platforms. We synchronize products, inventory, orders, and customer data in real time.',
+          'Yes. Frappe ERP has built-in connectors for WooCommerce and Shopify, and we have built custom integrations with Magento, BigCommerce, and bespoke e-commerce platforms. We synchronize products, inventory, orders, and customer data in real time.',
       },
       {
         question: 'How do you handle integration failures and data conflicts?',
@@ -378,9 +378,9 @@ export const services: Service[] = [
           'Every integration includes retry logic, dead-letter queues for failed messages, and conflict resolution rules. Our monitoring dashboards provide real-time visibility into sync status, and automated alerts ensure your team is notified of any issues before they impact operations.',
       },
     ],
-    metaTitle: 'System Integration Services for ERPNext | TECHINCGLOBAL',
+    metaTitle: 'System Integration Services for Frappe ERP | TECHINCGLOBAL',
     metaDescription:
-      'Integrate ERPNext with payment gateways, e-commerce platforms, banks, and government systems. Real-time data synchronization with monitoring and error handling.',
+      'Integrate Frappe ERP with payment gateways, e-commerce platforms, banks, and government systems. Real-time data synchronization with monitoring and error handling.',
   },
 
   // -------------------------------------------------------------------------
@@ -435,9 +435,9 @@ export const services: Service[] = [
     ],
     faqs: [
       {
-        question: 'Do you only recommend ERPNext?',
+        question: 'Do you only recommend Frappe ERP?',
         answer:
-          'While we specialize in ERPNext and believe it is the strongest open-source ERP on the market, our consulting engagements are objective. If your requirements point to a different platform, we will tell you. Our goal is to find the right solution for your business, not to sell a specific product.',
+          'While we specialize in Frappe ERP and believe it is the strongest open-source ERP on the market, our consulting engagements are objective. If your requirements point to a different platform, we will tell you. Our goal is to find the right solution for your business, not to sell a specific product.',
       },
       {
         question: 'How long does an ERP advisory engagement typically last?',
@@ -468,11 +468,11 @@ export const services: Service[] = [
     title: 'Support & Optimization',
     shortTitle: 'Support',
     description:
-      'Keep your ERPNext system running at peak performance with proactive monitoring, timely upgrades, responsive user support, and continuous optimization. Our managed support plans give you the confidence that expert help is always within reach.',
+      'Keep your Frappe ERP system running at peak performance with proactive monitoring, timely upgrades, responsive user support, and continuous optimization. Our managed support plans give you the confidence that expert help is always within reach.',
     icon: 'HeadphonesIcon',
     benefits: [
       'Minimize downtime with proactive system monitoring and issue resolution',
-      'Stay current with ERPNext releases, security patches, and new features',
+      'Stay current with Frappe ERP releases, security patches, and new features',
       'Empower users with responsive helpdesk support and knowledge base access',
       'Continuously improve system performance through regular health checks and tuning',
       'Free your internal IT team to focus on strategic initiatives instead of ERP maintenance',
@@ -489,7 +489,7 @@ export const services: Service[] = [
         number: 1,
         title: 'System Onboarding',
         description:
-          'We audit your current ERPNext environment, set up monitoring agents, establish baseline performance metrics, and configure alerting thresholds.',
+          'We audit your current Frappe ERP environment, set up monitoring agents, establish baseline performance metrics, and configure alerting thresholds.',
       },
       {
         number: 2,
@@ -507,7 +507,7 @@ export const services: Service[] = [
         number: 4,
         title: 'Continuous Improvement',
         description:
-          'Quarterly reviews assess system performance, user adoption patterns, and upcoming ERPNext features — resulting in a prioritized optimization backlog.',
+          'Quarterly reviews assess system performance, user adoption patterns, and upcoming Frappe ERP features — resulting in a prioritized optimization backlog.',
       },
     ],
     faqs: [
@@ -517,19 +517,19 @@ export const services: Service[] = [
           'Our standard SLA provides a 4-hour response time for critical issues and 8 hours for standard requests during business hours. Premium plans include 1-hour critical response times with 24/7 coverage for production-down scenarios.',
       },
       {
-        question: 'Do you handle ERPNext version upgrades?',
+        question: 'Do you handle Frappe ERP version upgrades?',
         answer:
           'Yes. Every support plan includes managed upgrades. We test the new version against your custom apps and configurations in a staging environment, resolve any compatibility issues, and schedule the production upgrade during a maintenance window with rollback capability.',
       },
       {
-        question: 'Can you support ERPNext instances not implemented by TECHINCGLOBAL?',
+        question: 'Can you support Frappe ERP instances not implemented by TECHINCGLOBAL?',
         answer:
-          'Absolutely. We onboard existing ERPNext environments implemented by other partners or in-house teams. After an initial audit to understand your configuration and customizations, we take over support and optimization responsibilities.',
+          'Absolutely. We onboard existing Frappe ERP environments implemented by other partners or in-house teams. After an initial audit to understand your configuration and customizations, we take over support and optimization responsibilities.',
       },
     ],
-    metaTitle: 'ERPNext Support & Optimization Services | TECHINCGLOBAL',
+    metaTitle: 'Frappe ERP Support & Optimization Services | TECHINCGLOBAL',
     metaDescription:
-      'Managed ERPNext support with proactive monitoring, SLA-backed helpdesk, version upgrades, and continuous performance optimization. Keep your ERP running at peak performance.',
+      'Managed Frappe ERP support with proactive monitoring, SLA-backed helpdesk, version upgrades, and continuous performance optimization. Keep your ERP running at peak performance.',
   },
 
   // -------------------------------------------------------------------------
@@ -540,12 +540,12 @@ export const services: Service[] = [
     title: 'Training & Change Management',
     shortTitle: 'Training',
     description:
-      'Technology alone does not drive transformation — people do. Our structured training programs and change management strategies ensure your teams adopt ERPNext confidently, use it effectively, and sustain long-term productivity gains.',
+      'Technology alone does not drive transformation — people do. Our structured training programs and change management strategies ensure your teams adopt Frappe ERP confidently, use it effectively, and sustain long-term productivity gains.',
     icon: 'GraduationCap',
     benefits: [
       'Accelerate user adoption with role-based training designed for real daily workflows',
       'Reduce post-go-live support tickets by up to 60% through proactive skill-building',
-      'Build internal ERPNext champions who can support and train their peers',
+      'Build internal Frappe ERP champions who can support and train their peers',
       'Overcome resistance to change with a structured communication and engagement plan',
       'Sustain long-term ROI by ensuring the system is used to its full potential',
     ],
@@ -610,9 +610,9 @@ export const services: Service[] = [
           'Yes. We can set up a train-the-trainer program so your internal team can onboard new hires independently. We also maintain a video library and knowledge base that new employees can use for self-paced learning.',
       },
     ],
-    metaTitle: 'ERPNext Training & Change Management | TECHINCGLOBAL',
+    metaTitle: 'Frappe ERP Training & Change Management | TECHINCGLOBAL',
     metaDescription:
-      'Role-based ERPNext training and structured change management to drive user adoption. Workshops, video libraries, and adoption monitoring for lasting transformation.',
+      'Role-based Frappe ERP training and structured change management to drive user adoption. Workshops, video libraries, and adoption monitoring for lasting transformation.',
   },
 ];
 

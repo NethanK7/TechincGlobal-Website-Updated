@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button";
 import { services } from "@/content/services";
 
 export const metadata: Metadata = {
-    title: "ERPNext & Frappe Services | TECHINCGLOBAL",
+    title: "Frappe ERP & Frappe Services | TECHINCGLOBAL",
     description:
-        "End-to-end ERPNext services from implementation and customization through integration, automation, support, and training. Delivered by Sri Lanka's authorized Frappe partner.",
+        "End-to-end Frappe ERP services from implementation and customization through integration, automation, support, and training. Delivered by Sri Lanka's authorized Frappe partner.",
     alternates: { canonical: "https://techincglobal.com/services" },
 };
 

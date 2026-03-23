@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useLayoutMode } from "@/components/layout/layout-provider";
 
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui/container";
@@ -10,6 +13,8 @@ import { FadeUp } from "@/components/shared/motion-wrapper";
 // ---------------------------------------------------------------------------
 
 function HeroSection() {
+  const { setSearchOpen } = useLayoutMode();
+
   return (
     <section
       className="relative overflow-hidden bg-hero-gradient"
@@ -49,14 +54,34 @@ function HeroSection() {
       <Container size="default" className="relative z-10">
         <div className="flex flex-col items-center pb-20 pt-28 text-center sm:pb-24 sm:pt-36 lg:pb-32 lg:pt-44">
           <FadeUp>
-            {/* Eyebrow */}
-            <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-brand-teal backdrop-blur-sm">
-              <span
-                className="inline-block h-1.5 w-1.5 rounded-full bg-brand-teal"
-                aria-hidden="true"
-              />
-              Authorized Frappe Technologies Partner
-            </p>
+            {/* Eyebrow - Partner Logo */}
+            <div className="mb-6 inline-flex justify-center">
+              <div className="flex shrink-0 items-center overflow-hidden rounded-lg border-2 border-[#488AC7] bg-white text-left shadow-xl transition-transform hover:scale-105">
+                {/* Left Blue 'F' block */}
+                <div className="flex h-[42px] w-[42px] items-center justify-center bg-[#488AC7] sm:h-[46px] sm:w-[46px]">
+                  <svg 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 sm:h-6 sm:w-6"
+                  >
+                    <rect x="4" y="5" width="16" height="4" fill="white" />
+                    <path d="M4 12h12v4H8v5H4v-9z" fill="white" />
+                  </svg>
+                </div>
+                {/* Right Text block */}
+                <div className="flex flex-col justify-center px-3 py-1">
+                  <span className="mb-0.5 text-[9px] font-bold tracking-[0.2em] text-black leading-none sm:text-[10px]">
+                    CERTIFIED
+                  </span>
+                  <span className="text-lg font-extrabold text-black leading-none sm:text-xl">
+                    Partner
+                  </span>
+                </div>
+              </div>
+            </div>
 
             {/* Main headline */}
             <h1 className="mx-auto max-w-4xl text-display-lg font-bold tracking-tight text-text-inverse sm:text-display-xl lg:text-display-2xl">
@@ -69,15 +94,18 @@ function HeroSection() {
             {/* Supporting paragraph */}
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-inverse/70 sm:text-xl">
               Accelerate your digital transformation with Sri Lanka&rsquo;s
-              leading ERPNext implementation partner. Our proprietary NXTGEN
-              Agile methodology delivers enterprise ERP solutions 40% faster
+              leading Frappe ERP implementation partner. Our proprietary NXTGEN
+              Agile methodology delivers enterprise solutions 20 weeks faster
               with guaranteed adoption.
             </p>
 
             {/* CTAs & Workspace Portal Search */}
             <div className="mt-10 mx-auto w-full max-w-xl">
-              <div className="flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 p-1.5 backdrop-blur-md shadow-2xl">
-                <div className="flex flex-1 items-center gap-3 px-4">
+              <div 
+                className="flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 p-1.5 backdrop-blur-md shadow-2xl cursor-text hover:bg-white/10 transition-colors"
+                onClick={() => setSearchOpen(true)}
+              >
+                <div className="flex flex-1 items-center gap-3 px-4 pointer-events-none">
                   <svg
                     className="h-5 w-5 text-brand-teal/80 flex-shrink-0"
                     fill="none"
@@ -90,11 +118,11 @@ function HeroSection() {
                   <input
                     type="text"
                     placeholder="Search for inventory, manufacturing, accounting..."
-                    className="bg-transparent text-sm text-white placeholder-white/40 outline-none w-full"
-                    disabled
+                    className="bg-transparent text-sm text-white placeholder-white/40 outline-none w-full cursor-pointer"
+                    readOnly
                   />
                 </div>
-                <Button size="lg" className="rounded-xl sm:px-5" asChild>
+                <Button size="lg" className="rounded-xl sm:px-5" onClick={(e) => e.stopPropagation()} asChild>
                   <Link href="/contact">Book Consultation</Link>
                 </Button>
               </div>
@@ -108,13 +136,13 @@ function HeroSection() {
                   { label: "Custom App", href: "/services" },
                   { label: "Frappe", href: "/services" }
                 ].map((tag) => (
-                  <Link
+                  <button
                     key={tag.label}
-                    href={tag.href}
+                    onClick={() => setSearchOpen(true)}
                     className="rounded-full bg-white/5 border border-white/10 px-2.5 py-1 hover:bg-white/10 hover:text-text-inverse hover:border-white/20 transition-all font-medium"
                   >
                     {tag.label}
-                  </Link>
+                  </button>
                 ))}
               </div>
             </div>

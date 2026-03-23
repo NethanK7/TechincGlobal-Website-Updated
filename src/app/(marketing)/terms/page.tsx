@@ -87,7 +87,7 @@ export default function TermsPage() {
               </p>
               <ul className="mt-3 list-disc space-y-2 pl-6">
                 <li>
-                  ERPNext implementation and deployment using our proprietary
+                  Frappe ERP implementation and deployment using our proprietary
                   NXTGEN Agile methodology.
                 </li>
                 <li>

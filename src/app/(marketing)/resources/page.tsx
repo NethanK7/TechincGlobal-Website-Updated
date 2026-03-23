@@ -93,9 +93,9 @@ const resources: Resource[] = [
     href: "#" /* TODO_CLIENT_CONFIRMATION — Link to actual downloadable PDF */,
   },
   {
-    title: "ERPNext Feature Comparison",
+    title: "Frappe ERP Feature Comparison",
     description:
-      "A detailed comparison of ERPNext against leading proprietary ERP platforms including SAP Business One, Oracle NetSuite, and Microsoft Dynamics 365. Covers features, pricing, and total cost of ownership.",
+      "A detailed comparison of Frappe ERP against leading proprietary ERP platforms including SAP Business One, Oracle NetSuite, and Microsoft Dynamics 365. Covers features, pricing, and total cost of ownership.",
     type: "Guide",
     typeBadgeColor: "bg-blue-50 text-blue-700 border-blue-200",
     icon: FileText,
@@ -106,7 +106,7 @@ const resources: Resource[] = [
   {
     title: "ROI Calculator",
     description:
-      "An interactive tool to estimate the return on investment for your ERPNext implementation. Input your current operational costs and see projected savings across labour, error reduction, and process efficiency.",
+      "An interactive tool to estimate the return on investment for your Frappe ERP implementation. Input your current operational costs and see projected savings across labour, error reduction, and process efficiency.",
     type: "Tool",
     typeBadgeColor: "bg-amber-50 text-amber-700 border-amber-200",
     icon: BarChart3,
@@ -117,7 +117,7 @@ const resources: Resource[] = [
   {
     title: "Industry Solution Briefs",
     description:
-      "Tailored solution briefs for key industries including manufacturing, distribution, professional services, and retail. Each brief outlines industry-specific challenges and how ERPNext addresses them.",
+      "Tailored solution briefs for key industries including manufacturing, distribution, professional services, and retail. Each brief outlines industry-specific challenges and how Frappe ERP addresses them.",
     type: "Collection",
     typeBadgeColor: "bg-teal-50 text-teal-700 border-teal-200",
     icon: ClipboardCheck,
@@ -134,10 +134,10 @@ const resources: Resource[] = [
 const recentBlogPosts = [
   {
     slug: "why-sri-lankan-businesses-choosing-erpnext",
-    title: "Why Sri Lankan Businesses Are Choosing ERPNext in 2025",
+    title: "Why Sri Lankan Businesses Are Choosing Frappe ERP in 2025",
     excerpt:
-      "Discover why a growing number of Sri Lankan enterprises are migrating to ERPNext for its cost-effectiveness, flexibility, and comprehensive feature set.",
-    category: "ERPNext",
+      "Discover why a growing number of Sri Lankan enterprises are migrating to Frappe ERP for its cost-effectiveness, flexibility, and comprehensive feature set.",
+    category: "Frappe ERP",
     date: "2025-01-15",
     readingTime: "8 min read",
   },
@@ -163,7 +163,7 @@ const recentBlogPosts = [
 
 function getCategoryColor(category: string): string {
   const colors: Record<string, string> = {
-    ERPNext: "bg-blue-50 text-blue-700 border-blue-200",
+    Frappe ERP: "bg-blue-50 text-blue-700 border-blue-200",
     "Digital Transformation": "bg-purple-50 text-purple-700 border-purple-200",
     "Best Practices": "bg-amber-50 text-amber-700 border-amber-200",
   };
@@ -426,7 +426,7 @@ export default function ResourcesPage() {
       {/* ------------------------------------------------------------------ */}
       <CTASection
         heading="Ready to Start Your Transformation?"
-        description="Our team of certified ERPNext consultants is ready to help you plan and execute your digital transformation journey. Book a free consultation today."
+        description="Our team of certified Frappe ERP consultants is ready to help you plan and execute your digital transformation journey. Book a free consultation today."
         primaryButton={{
           label: "Book Free Consultation",
           href: "/contact",

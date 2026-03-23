@@ -114,12 +114,12 @@ export const resultCategories: ResultCategoryConfig[] = [
     recommendations: [
       "Begin with a comprehensive business process audit to identify key pain points",
       "Map your current workflows and identify areas where manual processes cause the most friction",
-      "Explore ERPNext capabilities through a personalized demo with our team",
+      "Explore Frappe ERP capabilities through a personalized demo with our team",
       "Consider our ERP Consulting & Advisory services to build a transformation roadmap",
     ],
     nextSteps: [
       "Schedule a free consultation to discuss your current challenges",
-      "Request an ERPNext demo tailored to your industry",
+      "Request an Frappe ERP demo tailored to your industry",
       "Download our Digital Transformation Planning Guide",
     ],
   },
@@ -133,12 +133,12 @@ export const resultCategories: ResultCategoryConfig[] = [
     recommendations: [
       "Develop a formal digital transformation roadmap with clear milestones",
       "Prioritize your top 3 processes for automation and system integration",
-      "Evaluate your current system limitations against ERPNext capabilities",
+      "Evaluate your current system limitations against Frappe ERP capabilities",
       "Build an internal champion team to lead the transformation initiative",
     ],
     nextSteps: [
       "Schedule a consultation to discuss implementation options and timeline",
-      "Request a detailed ERPNext feature walkthrough for your industry",
+      "Request a detailed Frappe ERP feature walkthrough for your industry",
       "Review our NXTGEN methodology to understand our implementation approach",
     ],
   },
@@ -148,7 +148,7 @@ export const resultCategories: ResultCategoryConfig[] = [
     category: "transformation-ready",
     title: "Transformation Ready",
     description:
-      "Your organization is well-positioned for ERP transformation. You have the foundation in place — strong processes, willing team, and clear needs — to achieve rapid and meaningful results with ERPNext.",
+      "Your organization is well-positioned for ERP transformation. You have the foundation in place — strong processes, willing team, and clear needs — to achieve rapid and meaningful results with Frappe ERP.",
     recommendations: [
       "Begin formal requirements gathering with department heads",
       "Explore our NXTGEN Agile methodology for a structured, low-risk implementation",

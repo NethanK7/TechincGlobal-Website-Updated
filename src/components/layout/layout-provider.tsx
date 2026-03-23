@@ -7,15 +7,20 @@ type ViewMode = "top" | "sidebar";
 const LayoutContext = createContext<{
     viewMode: ViewMode;
     setViewMode: (mode: ViewMode) => void;
+    searchOpen: boolean;
+    setSearchOpen: (open: boolean) => void;
 }>({
     viewMode: "top",
     setViewMode: () => { },
+    searchOpen: false,
+    setSearchOpen: () => { },
 });
 
 export const useLayoutMode = () => useContext(LayoutContext);
 
 export function LayoutProvider({ children }: { children: React.ReactNode }) {
     const [viewMode, setViewMode] = useState<ViewMode>("top");
+    const [searchOpen, setSearchOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -34,7 +39,7 @@ export function LayoutProvider({ children }: { children: React.ReactNode }) {
     }
 
     return (
-        <LayoutContext.Provider value={{ viewMode, setViewMode: handleSetMode }}>
+        <LayoutContext.Provider value={{ viewMode, setViewMode: handleSetMode, searchOpen, setSearchOpen }}>
             {children}
         </LayoutContext.Provider>
     );

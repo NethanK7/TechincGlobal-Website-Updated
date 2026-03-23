@@ -24,7 +24,7 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 const services = [
-    "ERPNext Implementation",
+    "Frappe ERP Implementation",
     "Frappe Customization & Development",
     "Business Process Automation",
     "Legacy System Modernization",

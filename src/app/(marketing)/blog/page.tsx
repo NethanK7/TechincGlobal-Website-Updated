@@ -33,7 +33,7 @@ import { formatDate } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Blog | ERP Insights & Digital Transformation Resources",
   description:
-    "Expert insights on ERPNext implementation, digital transformation, business automation, and ERP best practices from TECHINCGLOBAL's team.",
+    "Expert insights on Frappe ERP implementation, digital transformation, business automation, and ERP best practices from TECHINCGLOBAL's team.",
 };
 
 // ---------------------------------------------------------------------------
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 
 const categories = [
   "All",
-  "ERPNext",
+  "Frappe ERP",
   "Digital Transformation",
   "Business Automation",
   "Best Practices",
@@ -61,10 +61,10 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     slug: "why-sri-lankan-businesses-choosing-erpnext",
-    title: "Why Sri Lankan Businesses Are Choosing ERPNext in 2025",
+    title: "Why Sri Lankan Businesses Are Choosing Frappe ERP in 2025",
     excerpt:
-      "Discover why a growing number of Sri Lankan enterprises are migrating to ERPNext for its cost-effectiveness, flexibility, and comprehensive feature set.",
-    category: "ERPNext",
+      "Discover why a growing number of Sri Lankan enterprises are migrating to Frappe ERP for its cost-effectiveness, flexibility, and comprehensive feature set.",
+    category: "Frappe ERP",
     date: "2025-01-15",
     readingTime: "8 min read",
     author: "TECHINCGLOBAL Team",
@@ -93,8 +93,8 @@ const blogPosts: BlogPost[] = [
     slug: "understanding-frappe-framework-technical-overview",
     title: "Understanding the Frappe Framework: A Technical Overview",
     excerpt:
-      "A deep dive into the Frappe framework that powers ERPNext, exploring its architecture, extensibility, and why it's ideal for enterprise applications.",
-    category: "ERPNext",
+      "A deep dive into the Frappe framework that powers Frappe ERP, exploring its architecture, extensibility, and why it's ideal for enterprise applications.",
+    category: "Frappe ERP",
     date: "2024-12-12",
     readingTime: "10 min read",
     author: "TECHINCGLOBAL Team",
@@ -127,7 +127,7 @@ const blogPosts: BlogPost[] = [
 
 function getCategoryColor(category: string): string {
   const colors: Record<string, string> = {
-    ERPNext: "bg-blue-50 text-blue-700 border-blue-200",
+    Frappe ERP: "bg-blue-50 text-blue-700 border-blue-200",
     "Digital Transformation": "bg-purple-50 text-purple-700 border-purple-200",
     "Business Automation": "bg-teal-50 text-teal-700 border-teal-200",
     "Best Practices": "bg-amber-50 text-amber-700 border-amber-200",
@@ -158,7 +158,7 @@ export default function BlogPage() {
             <SectionHeader
               eyebrow="Our Blog"
               title="Insights & Resources"
-              description="Expert knowledge, practical guides, and thought leadership on ERPNext, digital transformation, and business automation — written by the TECHINCGLOBAL team."
+              description="Expert knowledge, practical guides, and thought leadership on Frappe ERP, digital transformation, and business automation — written by the TECHINCGLOBAL team."
               titleSize="lg"
               align="center"
             />
@@ -296,7 +296,7 @@ export default function BlogPage() {
       {/* ------------------------------------------------------------------ */}
       <CTASection
         heading="Need Expert ERP Guidance?"
-        description="Our team of certified ERPNext consultants is ready to help you plan and execute your digital transformation journey."
+        description="Our team of certified Frappe ERP consultants is ready to help you plan and execute your digital transformation journey."
         primaryButton={{
           label: "Book Free Consultation",
           href: "/contact",

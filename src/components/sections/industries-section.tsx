@@ -13,7 +13,7 @@ function IndustriesSection() {
                     <SectionHeader
                         eyebrow="Industries We Serve"
                         title="ERP Solutions Across Every Sector"
-                        description="From manufacturing shopfloors to professional services offices, our ERPNext implementations are tailored to the unique processes and compliance needs of your industry."
+                        description="From manufacturing shopfloors to professional services offices, our Frappe ERP implementations are tailored to the unique processes and compliance needs of your industry."
                         id="industries-heading"
                     />
                 </FadeUp>

@@ -180,7 +180,7 @@ export default async function IndustryDetailPage({ params }: Props) {
                     <FadeUp>
                         <div className="mt-6 max-w-3xl">
                             <h1 className="text-display-md font-bold text-white sm:text-display-lg">
-                                ERPNext for {industry.title}
+                                Frappe ERP for {industry.title}
                             </h1>
                             <p className="mt-5 text-lg leading-relaxed text-white/70">
                                 {industry.description}
@@ -378,7 +378,7 @@ export default async function IndustryDetailPage({ params }: Props) {
                 <Container>
                     <FadeUp>
                         <h2 id="solutions-heading" className="text-display-sm font-bold text-text-primary">
-                            How ERPNext Solves These Challenges
+                            How Frappe ERP Solves These Challenges
                         </h2>
                     </FadeUp>
                     <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -449,7 +449,7 @@ export default async function IndustryDetailPage({ params }: Props) {
                             Ready to Transform Your {industry.title} Operations?
                         </h2>
                         <p className="mt-4 text-lg text-white/70">
-                            Let&apos;s talk about what an ERPNext implementation could look like for your business.
+                            Let&apos;s talk about what an Frappe ERP implementation could look like for your business.
                         </p>
                         <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
                             <Button size="lg" asChild>

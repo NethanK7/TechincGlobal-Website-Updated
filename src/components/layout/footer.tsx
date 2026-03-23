@@ -12,7 +12,7 @@ const footerLinks = {
     { label: "Contact", href: "/contact" },
   ],
   services: [
-    { label: "ERPNext Implementation", href: "/services/erpnext-implementation" },
+    { label: "Frappe ERP Implementation", href: "/services/erpnext-implementation" },
     { label: "Frappe Customization", href: "/services/frappe-customization-development" },
     { label: "Process Automation", href: "/services/business-process-automation" },
     { label: "Legacy Modernization", href: "/services/legacy-system-modernization" },

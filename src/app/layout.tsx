@@ -1,5 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { InstallPrompt } from "@/pwa/install-prompt";
+import { pwaConfig } from "@/pwa/config";
+import { RegisterServiceWorker } from "@/pwa/register-service-worker";
+import { CapacitorProvider } from "@/components/providers/capacitor-provider";
+import { MobileTabBar } from "@/components/layout/mobile-tab-bar";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,6 +15,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://techincglobal.com"),
+  manifest: "/manifest.webmanifest",
   title: {
     default: "TECHINCGLOBAL | NXTGEN ERP Solutions",
     template: "%s | TECHINCGLOBAL",
@@ -17,7 +23,7 @@ export const metadata: Metadata = {
   description:
     "Leading enterprise ERP solutions provider specializing in NXTGEN Agile implementation methodology. Authorized Frappe Technologies partner accelerating digital transformation across Sri Lanka.",
   keywords: [
-    "ERPNext",
+    "Frappe ERP",
     "ERP implementation",
     "Frappe",
     "digital transformation",
@@ -28,6 +34,15 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "TECHINCGLOBAL" }],
   creator: "TECHINCGLOBAL",
+  applicationName: pwaConfig.appName,
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: pwaConfig.appName,
+  },
+  formatDetection: {
+    telephone: false,
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -56,6 +71,20 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    icon: [
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: pwaConfig.themeColor,
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -99,7 +128,12 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-background font-sans antialiased">
-        {children}
+        <RegisterServiceWorker />
+        <CapacitorProvider>
+          {children}
+          <MobileTabBar />
+        </CapacitorProvider>
+        <InstallPrompt />
       </body>
     </html>
   );

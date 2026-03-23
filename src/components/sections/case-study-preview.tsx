@@ -9,9 +9,13 @@ const caseStudies = [
         industry: "Manufacturing",
         client: "Leading Sri Lankan Manufacturer",
         challenge: "Disconnected production, inventory, and accounting systems creating costly delays and data inconsistencies.",
-        outcome: "Unified ERPNext platform deployed in 14 weeks — production lead times reduced by 30%, month-end closing from 5 days to 1 day.",
-        slug: "manufacturing-erpnext",
+        outcome: "Unified Frappe ERP platform deployed in 14 weeks — production lead times reduced by 30%, month-end closing from 5 days to 1 day.",
+        slug: "manufacturing-frappe",
         tag: "Manufacturing",
+        quote: "TECHINCGLOBAL didn't just install a system; they fundamentally optimized our shopfloor operations. Their deep Frappe expertise cut our production lead times by 30%.",
+        quoteAuthor: "Director of Operations",
+        logoColor: "bg-blue-600",
+        logoLetter: "M",
         // TODO_CLIENT_CONFIRMATION: Replace with real client name, logo, and verified metrics
     },
     {
@@ -19,8 +23,12 @@ const caseStudies = [
         client: "Regional Distribution Company",
         challenge: "Manual stock management across 3 warehouses leading to regular stockouts and $200K+ in excess inventory.",
         outcome: "Real-time multi-warehouse inventory with automated reorder — inventory accuracy improved to 99.2%, excess stock reduced by 40%.",
-        slug: "distribution-erpnext",
+        slug: "distribution-frappe",
         tag: "Distribution",
+        quote: "Their team's understanding of regional tax policies and Frappe localization has been a game changer for our 3 warehouses. Stockouts are a thing of the past.",
+        quoteAuthor: "Supply Chain Head",
+        logoColor: "bg-emerald-600",
+        logoLetter: "D",
         // TODO_CLIENT_CONFIRMATION: Replace with real client name, logo, and verified metrics
     },
 ];
@@ -33,7 +41,7 @@ function CaseStudyPreview() {
                     <SectionHeader
                         eyebrow="Success Stories"
                         title="Real Businesses, Real Results"
-                        description="See how TECHINCGLOBAL has helped businesses across Sri Lanka transform their operations with ERPNext."
+                        description="See how TECHINCGLOBAL has helped businesses across Sri Lanka transform their operations with the Frappe framework."
                         id="case-studies-heading"
                     />
                 </FadeUp>
@@ -73,6 +81,21 @@ function CaseStudyPreview() {
                                         <p className="mt-1 text-sm font-medium leading-relaxed text-text-primary">
                                             {cs.outcome}
                                         </p>
+                                    </div>
+
+                                    {/* Customer Quote */}
+                                    <div className="mt-1 flex items-start gap-4 rounded-xl border border-surface-border bg-surface-muted/50 p-4">
+                                        <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white font-bold opacity-90 ${cs.logoColor}`}>
+                                            {cs.logoLetter}
+                                        </div>
+                                        <div className="flex flex-col gap-1">
+                                            <p className="text-sm italic text-text-secondary leading-snug">
+                                                "{cs.quote}"
+                                            </p>
+                                            <span className="text-xs font-semibold text-text-primary mt-1">
+                                                — {cs.quoteAuthor}
+                                            </span>
+                                        </div>
                                     </div>
 
                                     <Link

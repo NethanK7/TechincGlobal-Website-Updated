@@ -128,7 +128,7 @@ interface ServiceSchemaProps {
 /**
  * Renders Service JSON-LD structured data for a specific service page.
  *
- * @param name - The service name (e.g. "ERPNext Implementation")
+ * @param name - The service name (e.g. "Frappe ERP Implementation")
  * @param description - A brief description of the service
  * @param url - The full canonical URL of the service page
  */

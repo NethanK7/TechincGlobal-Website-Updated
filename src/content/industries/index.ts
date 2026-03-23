@@ -8,7 +8,7 @@ export const industries: Industry[] = [
     slug: 'manufacturing',
     title: 'Manufacturing',
     description:
-      'Streamline discrete and process manufacturing operations with ERPNext — from bill of materials and production planning through quality control and shop-floor execution. Gain real-time visibility into every stage of your production lifecycle.',
+      'Streamline discrete and process manufacturing operations with Frappe ERP — from bill of materials and production planning through quality control and shop-floor execution. Gain real-time visibility into every stage of your production lifecycle.',
     icon: 'Factory',
     challenges: [
       'Complex multi-level BOMs and frequent engineering changes that legacy systems cannot track in real time',
@@ -20,7 +20,7 @@ export const industries: Industry[] = [
       {
         title: 'Integrated Production Planning',
         description:
-          'ERPNext\'s manufacturing module links sales forecasts to production plans, material requirements, and purchase orders — ensuring you produce the right quantities at the right time with minimal waste.',
+          'Frappe ERP\'s manufacturing module links sales forecasts to production plans, material requirements, and purchase orders — ensuring you produce the right quantities at the right time with minimal waste.',
       },
       {
         title: 'Multi-Level BOM Management',
@@ -53,7 +53,7 @@ export const industries: Industry[] = [
     companyApproach: [
       'TECHINCGLOBAL starts by mapping your product structures, planning rules, costing logic, and shop-floor transactions before any configuration is finalized.',
       'We stage manufacturing rollouts in practical layers: item and BOM governance first, then MRP and job execution, then quality, dashboards, and automation.',
-      'Where standard ERPNext needs extension, we build focused Frappe workflows for approvals, barcode flows, machine data capture, or customer-specific documentation.',
+      'Where standard Frappe ERP needs extension, we build focused Frappe workflows for approvals, barcode flows, machine data capture, or customer-specific documentation.',
     ],
     kpis: [
       'Production plan adherence',
@@ -71,9 +71,9 @@ export const industries: Industry[] = [
       { step: "Phase 2", label: "Production Control", description: "Enable Material Requirements Planning (MRP), workstations, and live job cards." },
       { step: "Phase 3", label: "Quality & Costing", description: "Activate automated QMS checklist checkpoints and real-time machine absorption costing." }
     ],
-    metaTitle: 'ERPNext for Manufacturing | TECHINCGLOBAL',
+    metaTitle: 'Frappe ERP for Manufacturing | TECHINCGLOBAL',
     metaDescription:
-      'ERPNext manufacturing solutions for production planning, BOM management, quality control, and shop-floor tracking. Reduce lead times and improve delivery performance.',
+      'Frappe ERP manufacturing solutions for production planning, BOM management, quality control, and shop-floor tracking. Reduce lead times and improve delivery performance.',
   },
 
   // -------------------------------------------------------------------------
@@ -83,7 +83,7 @@ export const industries: Industry[] = [
     slug: 'distribution-logistics',
     title: 'Distribution & Logistics',
     description:
-      'Optimize your supply chain from warehouse to last-mile delivery. ERPNext unifies inventory management, order fulfillment, fleet coordination, and logistics tracking into a single platform that scales with your distribution network.',
+      'Optimize your supply chain from warehouse to last-mile delivery. Frappe ERP unifies inventory management, order fulfillment, fleet coordination, and logistics tracking into a single platform that scales with your distribution network.',
     icon: 'Truck',
     challenges: [
       'Inventory inaccuracies across multiple warehouses leading to overselling, stock mismatches, and costly emergency shipments',
@@ -123,7 +123,7 @@ export const industries: Industry[] = [
     companyApproach: [
       'TECHINCGLOBAL defines a clean warehouse model first: item master discipline, unit conversions, batch controls, reorder logic, and transfer rules.',
       'We design fulfillment around your actual process, including pick lists, route plans, dispatch checkpoints, proof-of-delivery capture, and exception handling.',
-      'For complex logistics environments, we connect ERPNext to courier APIs, handheld barcode devices, customer portals, and finance reports through Frappe integrations.',
+      'For complex logistics environments, we connect Frappe ERP to courier APIs, handheld barcode devices, customer portals, and finance reports through Frappe integrations.',
     ],
     kpis: [
       'Inventory accuracy by warehouse',
@@ -141,9 +141,9 @@ export const industries: Industry[] = [
       { step: "Phase 2", label: "Fulfillment Sync", description: "Automate wave picking schedules, container assignment, and proof-of-delivery syncs." },
       { step: "Phase 3", label: "Insights & Fleet", description: "Deploy 3PL connectors and strategic predictive restock alert automation." }
     ],
-    metaTitle: 'ERPNext for Distribution & Logistics | TECHINCGLOBAL',
+    metaTitle: 'Frappe ERP for Distribution & Logistics | TECHINCGLOBAL',
     metaDescription:
-      'Distribution and logistics ERP solutions with multi-warehouse inventory, automated fulfillment, fleet management, and 3PL integration. Optimize your supply chain with ERPNext.',
+      'Distribution and logistics ERP solutions with multi-warehouse inventory, automated fulfillment, fleet management, and 3PL integration. Optimize your supply chain with Frappe ERP.',
   },
 
   // -------------------------------------------------------------------------
@@ -153,7 +153,7 @@ export const industries: Industry[] = [
     slug: 'retail-ecommerce',
     title: 'Retail & E-Commerce',
     description:
-      'Unify your retail operations across physical stores, online channels, and mobile commerce. ERPNext delivers integrated POS, inventory, customer management, and promotions in a platform that adapts to the fast pace of modern retail.',
+      'Unify your retail operations across physical stores, online channels, and mobile commerce. Frappe ERP delivers integrated POS, inventory, customer management, and promotions in a platform that adapts to the fast pace of modern retail.',
     icon: 'ShoppingCart',
     challenges: [
       'Fragmented systems for POS, e-commerce, and accounting that create data silos and prevent a unified view of the customer',
@@ -165,7 +165,7 @@ export const industries: Industry[] = [
       {
         title: 'Unified POS & E-Commerce',
         description:
-          'ERPNext POS syncs with your online store in real time — prices, promotions, inventory levels, and customer data are consistent across every channel, eliminating reconciliation headaches.',
+          'Frappe ERP POS syncs with your online store in real time — prices, promotions, inventory levels, and customer data are consistent across every channel, eliminating reconciliation headaches.',
       },
       {
         title: 'Omnichannel Inventory Management',
@@ -193,7 +193,7 @@ export const industries: Industry[] = [
     companyApproach: [
       'TECHINCGLOBAL aligns your catalog, branches, tax rules, promotions, and payment methods before rollout so channel data stays consistent from day one.',
       'We configure localized POS, branch controls, sales returns, exchange handling, and outlet performance dashboards around your retail operating model.',
-      'When your stack includes storefronts, delivery apps, or loyalty systems, we extend ERPNext with Frappe-based middleware and workflows rather than forcing manual reconciliation.',
+      'When your stack includes storefronts, delivery apps, or loyalty systems, we extend Frappe ERP with Frappe-based middleware and workflows rather than forcing manual reconciliation.',
     ],
     kpis: [
       'Stock availability across channels',
@@ -211,9 +211,9 @@ export const industries: Industry[] = [
       { step: "Phase 2", label: "POS & Sales Connect", description: "Deploy localized online/offline POS checkouts with auto-reconciliations." },
       { step: "Phase 3", label: "Growth Engines", description: "Enable point-based loyalty tiers and targeted CRM automated promotions." }
     ],
-    metaTitle: 'ERPNext for Retail & E-Commerce | TECHINCGLOBAL',
+    metaTitle: 'Frappe ERP for Retail & E-Commerce | TECHINCGLOBAL',
     metaDescription:
-      'Omnichannel retail ERP with integrated POS, e-commerce sync, loyalty programs, and multi-store inventory management. Unify your retail operations with ERPNext.',
+      'Omnichannel retail ERP with integrated POS, e-commerce sync, loyalty programs, and multi-store inventory management. Unify your retail operations with Frappe ERP.',
   },
 
   // -------------------------------------------------------------------------
@@ -223,7 +223,7 @@ export const industries: Industry[] = [
     slug: 'professional-services',
     title: 'Professional Services',
     description:
-      'Manage projects, track billable time, optimize resource utilization, and automate invoicing from a single platform. ERPNext gives professional services firms the visibility to deliver projects profitably and on schedule.',
+      'Manage projects, track billable time, optimize resource utilization, and automate invoicing from a single platform. Frappe ERP gives professional services firms the visibility to deliver projects profitably and on schedule.',
     icon: 'Briefcase',
     challenges: [
       'Lack of visibility into project profitability until it is too late, with costs buried in spreadsheets and disconnected systems',
@@ -281,9 +281,9 @@ export const industries: Industry[] = [
       { step: "Phase 2", label: "Milestones Tracking", description: "Unify invoicing schedules to automatically sync deliverables to accounting modules." },
       { step: "Phase 3", label: "Analytics Engine", description: "Dashboard layouts for absolute early warnings on erosion margins." }
     ],
-    metaTitle: 'ERPNext for Professional Services | TECHINCGLOBAL',
+    metaTitle: 'Frappe ERP for Professional Services | TECHINCGLOBAL',
     metaDescription:
-      'Professional services ERP with project accounting, resource management, time tracking, and automated billing. Improve project margins and utilization with ERPNext.',
+      'Professional services ERP with project accounting, resource management, time tracking, and automated billing. Improve project margins and utilization with Frappe ERP.',
   },
 
   // -------------------------------------------------------------------------
@@ -293,7 +293,7 @@ export const industries: Industry[] = [
     slug: 'construction-real-estate',
     title: 'Construction & Real Estate',
     description:
-      'Control project costs, coordinate subcontractors, track assets, and manage property portfolios from a single platform. ERPNext brings financial discipline and operational visibility to the complexity of construction and real estate operations.',
+      'Control project costs, coordinate subcontractors, track assets, and manage property portfolios from a single platform. Frappe ERP brings financial discipline and operational visibility to the complexity of construction and real estate operations.',
     icon: 'Building2',
     challenges: [
       'Project cost overruns caused by fragmented tracking of materials, labor, subcontractor claims, and change orders',
@@ -310,7 +310,7 @@ export const industries: Industry[] = [
       {
         title: 'Subcontractor & Procurement Management',
         description:
-          'Manage subcontractor contracts, work certifications, retention amounts, and progress payments within ERPNext. Procurement workflows ensure materials arrive on site when needed without overstocking.',
+          'Manage subcontractor contracts, work certifications, retention amounts, and progress payments within Frappe ERP. Procurement workflows ensure materials arrive on site when needed without overstocking.',
       },
       {
         title: 'Asset & Equipment Tracking',
@@ -351,7 +351,7 @@ export const industries: Industry[] = [
       { step: "Phase 2", label: "Asset Deployment", description: "Track location, downtime logs, and schedules of large fleets across sites." },
       { step: "Phase 3", label: "Retention Sync", description: "Deploy milestone billing with auto-retention triggers and claim schedules." }
     ],
-    metaTitle: 'ERPNext for Construction & Real Estate | TECHINCGLOBAL',
+    metaTitle: 'Frappe ERP for Construction & Real Estate | TECHINCGLOBAL',
     metaDescription:
       'Construction and real estate ERP solutions for project costing, subcontractor management, asset tracking, and milestone billing. Control costs and deliver on schedule.',
   },
@@ -363,7 +363,7 @@ export const industries: Industry[] = [
     slug: 'healthcare',
     title: 'Healthcare',
     description:
-      'Manage patient records, pharmacy inventory, clinical workflows, billing, and regulatory compliance from an integrated healthcare platform. ERPNext Healthcare helps providers focus on patient care while the system handles administration.',
+      'Manage patient records, pharmacy inventory, clinical workflows, billing, and regulatory compliance from an integrated healthcare platform. Frappe ERP Healthcare helps providers focus on patient care while the system handles administration.',
     icon: 'Heart',
     challenges: [
       'Paper-based or fragmented patient records that slow clinical decision-making and create compliance risks',
@@ -421,9 +421,9 @@ export const industries: Industry[] = [
       { step: "Phase 2", label: "Cycle Management", description: "Deploy FIFO pharmaceutical allocation batches with triggers for expiring loads." },
       { step: "Phase 3", label: "Disbursement Sync", description: "Automate itemized encounters synced to insurance claims approvals." }
     ],
-    metaTitle: 'ERPNext for Healthcare | TECHINCGLOBAL',
+    metaTitle: 'Frappe ERP for Healthcare | TECHINCGLOBAL',
     metaDescription:
-      'Healthcare ERP solutions for patient records, pharmacy management, clinical billing, and compliance. Improve patient care and operational efficiency with ERPNext.',
+      'Healthcare ERP solutions for patient records, pharmacy management, clinical billing, and compliance. Improve patient care and operational efficiency with Frappe ERP.',
   },
 
   // -------------------------------------------------------------------------
@@ -433,7 +433,7 @@ export const industries: Industry[] = [
     slug: 'education',
     title: 'Education',
     description:
-      'Unify student management, admissions, fee collection, academic scheduling, HR, and library operations in a single platform. ERPNext Education empowers institutions to deliver a better experience for students, parents, and staff.',
+      'Unify student management, admissions, fee collection, academic scheduling, HR, and library operations in a single platform. Frappe ERP Education empowers institutions to deliver a better experience for students, parents, and staff.',
     icon: 'BookOpen',
     challenges: [
       'Disconnected systems for admissions, student records, fee collection, and academic management creating data silos and administrative burden',
@@ -455,7 +455,7 @@ export const industries: Industry[] = [
       {
         title: 'Academic Planning & Assessment',
         description:
-          'Schedule classes, manage timetables, publish assessments, and track academic progress with grading rubrics and report card generation — all within ERPNext.',
+          'Schedule classes, manage timetables, publish assessments, and track academic progress with grading rubrics and report card generation — all within Frappe ERP.',
       },
     ],
     benefits: [
@@ -491,9 +491,9 @@ export const industries: Industry[] = [
       { step: "Phase 2", label: "Academics Desk", description: "Generate automated report cards, timetables maps, and assessment rubrics." },
       { step: "Phase 3", label: "Folk Gateways", description: "Enable continuous collection online processing with threshold metrics dashboards." }
     ],
-    metaTitle: 'ERPNext for Education | TECHINCGLOBAL',
+    metaTitle: 'Frappe ERP for Education | TECHINCGLOBAL',
     metaDescription:
-      'Education ERP for student management, fee collection, academic planning, and institutional administration. Streamline operations and improve student outcomes with ERPNext.',
+      'Education ERP for student management, fee collection, academic planning, and institutional administration. Streamline operations and improve student outcomes with Frappe ERP.',
   },
 
   // -------------------------------------------------------------------------
@@ -503,7 +503,7 @@ export const industries: Industry[] = [
     slug: 'trading-import-export',
     title: 'Trading & Import/Export',
     description:
-      'Navigate the complexities of international trade with ERPNext — multi-currency transactions, customs documentation, landed cost calculations, and letter of credit management. Purpose-built for Sri Lankan traders operating in global markets.',
+      'Navigate the complexities of international trade with Frappe ERP — multi-currency transactions, customs documentation, landed cost calculations, and letter of credit management. Purpose-built for Sri Lankan traders operating in global markets.',
     icon: 'Globe',
     challenges: [
       'Managing multi-currency transactions with fluctuating exchange rates, requiring constant manual adjustments and reconciliation',
@@ -561,7 +561,7 @@ export const industries: Industry[] = [
       { step: "Phase 2", label: "Landed Cost Sync", description: "Automate duty/freight distribution absorption triggers per item receipts." },
       { step: "Phase 3", label: "Finance Portals", description: "Assign automated threshold alerts for LC documentation and guarantees." }
     ],
-    metaTitle: 'ERPNext for Trading & Import/Export | TECHINCGLOBAL',
+    metaTitle: 'Frappe ERP for Trading & Import/Export | TECHINCGLOBAL',
     metaDescription:
       'Trading and import/export ERP with multi-currency management, landed cost calculation, LC tracking, and customs documentation. Built for Sri Lankan businesses trading globally.',
   },

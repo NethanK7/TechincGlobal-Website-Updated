@@ -3,7 +3,7 @@ import type { TeamMember, Testimonial } from "@/types";
 export const aboutContent = {
   story: [
     "TECHINCGLOBAL was founded with a clear vision: to make world-class ERP solutions accessible to businesses across Sri Lanka and the broader South Asian region. We recognized that growing enterprises were trapped between expensive, rigid enterprise systems and inadequate small-business tools — neither serving their real needs.",
-    "As an authorized Frappe Technologies partner, we bring the power of ERPNext — a comprehensive, open-source ERP platform — to organizations ready to modernize their operations. Our team combines deep technical expertise with genuine understanding of local business challenges, regulatory requirements, and market dynamics.",
+    "As an authorized Frappe Technologies partner, we bring the power of Frappe ERP — a comprehensive, open-source ERP platform — to organizations ready to modernize their operations. Our team combines deep technical expertise with genuine understanding of local business challenges, regulatory requirements, and market dynamics.",
     "From this foundation, we developed our proprietary NXTGEN Agile implementation methodology — a structured yet flexible framework born from over 150 successful implementations. NXTGEN reduces deployment time by up to 40% while ensuring genuine user adoption and measurable business outcomes. Today, we serve businesses across manufacturing, distribution, retail, services, and more, helping them transform operations and compete at a global level.",
   ],
   mission:
@@ -43,7 +43,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Sean Fernando",
     role: "Director — Solutions",
-    bio: "Leading solutions architecture and delivery with a focus on measurable business value from every ERPNext engagement.",
+    bio: "Leading solutions architecture and delivery with a focus on measurable business value from every Frappe ERP engagement.",
   },
   {
     name: "Lahiru Pathirana",
@@ -53,12 +53,12 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Jeby Krishoan",
     role: "Functional Consultant — Manufacturing & Supply Chain",
-    bio: "Expert in manufacturing and logistics workflows, ensuring ERPNext aligns perfectly with production and procurement realities.",
+    bio: "Expert in manufacturing and logistics workflows, ensuring Frappe ERP aligns perfectly with production and procurement realities.",
   },
   {
     name: "Niluka Dilrukshi",
     role: "Functional Consultant — Finance & Payroll",
-    bio: "Finance process expert ensuring accurate, efficient financial operations and statutory compliance through ERPNext.",
+    bio: "Finance process expert ensuring accurate, efficient financial operations and statutory compliance through Frappe ERP.",
   },
   {
     name: "Lakvindu Siriwardena",
@@ -103,7 +103,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "The team's understanding of Sri Lankan business requirements combined with their ERPNext expertise was exactly what we needed. Our order processing time dropped by 60% within the first quarter.",
+      "The team's understanding of Sri Lankan business requirements combined with their Frappe ERP expertise was exactly what we needed. Our order processing time dropped by 60% within the first quarter.",
     author: "Managing Director",
     role: "Managing Director",
     company: "FMCG Distribution Company",
@@ -127,7 +127,7 @@ export const testimonials: Testimonial[] = [
 export const partners = [
   {
     name: "Frappe Technologies",
-    description: "Authorized Frappe Technologies partner for ERPNext implementation and customization.",
+    description: "Authorized Frappe Technologies partner for Frappe ERP implementation and customization.",
     confirmed: true,
   },
   // TODO_CLIENT_CONFIRMATION: Add additional technology and consulting partners

@@ -20,7 +20,7 @@ const differentiators = [
     icon: Award,
     title: "Frappe Certified Expertise",
     description:
-      "As an authorized Frappe Technologies partner, we bring certified expertise in ERPNext implementation, customization, and enterprise-grade support.",
+      "As the only authorized Frappe Technologies partner for Sri Lanka and regional tax, we bring true certified expertise. TECHINCGLOBAL is also responsible for all Sri Lankan localisation of the Frappe platform.",
   },
   {
     icon: Globe,
@@ -31,9 +31,9 @@ const differentiators = [
 ] as const;
 
 const stats = [
-  { value: "150+", label: "Implementations" },
-  { value: "40%", label: "Faster Delivery" },
-  { value: "98%", label: "Client Satisfaction" },
+  { value: "10+", label: "Implementations" },
+  { value: "20", label: "Weeks Delivery" },
+  { value: "100%", label: "Client Satisfaction" },
   { value: "10+", label: "Years Experience" },
 ] as const;
 
@@ -82,6 +82,9 @@ function WhyChooseSection() {
               />
             ))}
           </div>
+          <p className="mt-6 text-center text-xs tracking-wide text-text-secondary/70">
+            * 20 weeks delivery timeline is based on the depth of your solution
+          </p>
         </FadeUp>
       </Container>
     </section>

@@ -11,7 +11,7 @@ import {
 
 const faqs = [
     {
-        question: "How long does an ERPNext implementation take?",
+        question: "How long does a Frappe ERP implementation take?",
         answer:
             "Most mid-market implementations are complete in 10–16 weeks using our NXTGEN Agile methodology. The exact timeline depends on the number of modules, data migration complexity, and level of customization required. We'll give you a precise estimate after an initial assessment.",
     },
@@ -21,14 +21,14 @@ const faqs = [
             "Three things set us apart: (1) We are the authorized Frappe Technologies partner in Sri Lanka with certified expertise. (2) Our proprietary NXTGEN Agile methodology reduces implementation time by up to 40%. (3) We combine global ERP best practices with deep local market understanding — including Sri Lankan tax, compliance, and business process requirements.",
     },
     {
-        question: "Is ERPNext suitable for small and medium businesses?",
+        question: "Is Frappe ERP suitable for small and medium businesses?",
         answer:
-            "Absolutely. ERPNext's open-source model means there are no per-user licensing fees, making it highly cost-effective for SMEs. Its modular architecture lets you start with the functions you need — Finance, Inventory, HR — and expand over time. We have helped businesses with as few as 15 employees successfully implement and benefit from ERPNext.",
+            "Absolutely. Frappe's open-source model means there are no per-user licensing fees, making it highly cost-effective for SMEs. Its modular architecture lets you start with the functions you need — Finance, Inventory, HR — and expand over time. We have helped businesses with as few as 15 employees successfully implement and benefit from Frappe ERP.",
     },
     {
-        question: "Can ERPNext handle Sri Lankan tax and compliance requirements?",
+        question: "Can Frappe ERP handle Sri Lankan tax and compliance requirements?",
         answer:
-            "Yes. ERPNext supports local VAT, SVAT, withholding tax, and the reporting formats required by the Inland Revenue Department. As a Sri Lanka-based Frappe partner, we have pre-configured these requirements across dozens of implementations and can deploy them quickly for your business.",
+            "Yes. Frappe supports local VAT, SVAT, withholding tax, and the reporting formats required by the Inland Revenue Department. As a Sri Lanka-based Frappe partner, we have pre-configured these requirements across dozens of implementations and can deploy them quickly for your business.",
     },
     {
         question: "What support do we get after go-live?",

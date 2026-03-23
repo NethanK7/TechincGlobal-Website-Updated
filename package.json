@@ -5,11 +5,22 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
+        "build:mobile": "BUILD_TARGET=capacitor next build",
         "start": "next start",
         "lint": "eslint .",
-        "postbuild": "next-sitemap"
+        "postbuild": "next-sitemap",
+        "cap:sync": "npm run build:mobile && npx cap sync android",
+        "cap:open": "npx cap open android",
+        "cap:sync:ios": "npm run build:mobile && npx cap sync ios",
+        "cap:open:ios": "npx cap open ios"
     },
     "dependencies": {
+        "@capacitor/android": "^8.2.0",
+        "@capacitor/core": "^8.2.0",
+        "@capacitor/haptics": "^8.0.1",
+        "@capacitor/ios": "^8.2.0",
+        "@capacitor/splash-screen": "^8.0.1",
+        "@capacitor/status-bar": "^8.0.1",
         "@hookform/resolvers": "^3.9.1",
         "@radix-ui/react-accordion": "^1.2.2",
         "@radix-ui/react-dialog": "^1.1.4",
@@ -37,6 +48,7 @@
         "zod": "^3.24.1"
     },
     "devDependencies": {
+        "@capacitor/cli": "^8.2.0",
         "@types/node": "^20",
         "@types/react": "^19",
         "@types/react-dom": "^19",

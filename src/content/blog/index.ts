@@ -3,18 +3,18 @@ import type { BlogPost } from "@/types";
 export const blogPosts: BlogPost[] = [
   {
     slug: "why-sri-lankan-businesses-choosing-erpnext",
-    title: "Why Sri Lankan Businesses Are Choosing ERPNext in 2025",
+    title: "Why Sri Lankan Businesses Are Choosing Frappe ERP in 2025",
     excerpt:
-      "Discover why a growing number of Sri Lankan enterprises are migrating to ERPNext for its cost-effectiveness, flexibility, and comprehensive feature set that rivals solutions costing ten times more.",
+      "Discover why a growing number of Sri Lankan enterprises are migrating to Frappe ERP for its cost-effectiveness, flexibility, and comprehensive feature set that rivals solutions costing ten times more.",
     content: "",
-    category: "ERPNext",
+    category: "Frappe ERP",
     author: "TECHINCGLOBAL Team",
     date: "2025-01-15",
     readingTime: 8,
-    tags: ["ERPNext", "Sri Lanka", "ERP Selection", "Digital Transformation"],
-    metaTitle: "Why Sri Lankan Businesses Are Choosing ERPNext in 2025",
+    tags: ["Frappe ERP", "Sri Lanka", "ERP Selection", "Digital Transformation"],
+    metaTitle: "Why Sri Lankan Businesses Are Choosing Frappe ERP in 2025",
     metaDescription:
-      "Discover why Sri Lankan enterprises are choosing ERPNext over traditional ERP solutions. Cost comparison, features, and local implementation advantages.",
+      "Discover why Sri Lankan enterprises are choosing Frappe ERP over traditional ERP solutions. Cost comparison, features, and local implementation advantages.",
   },
   {
     slug: "true-cost-running-business-on-spreadsheets",
@@ -50,16 +50,16 @@ export const blogPosts: BlogPost[] = [
     slug: "understanding-frappe-framework-technical-overview",
     title: "Understanding the Frappe Framework: A Technical Overview",
     excerpt:
-      "A deep dive into the Frappe framework that powers ERPNext, exploring its architecture, extensibility, and why it's ideal for enterprise applications requiring customization.",
+      "A deep dive into the Frappe framework that powers Frappe ERP, exploring its architecture, extensibility, and why it's ideal for enterprise applications requiring customization.",
     content: "",
-    category: "ERPNext",
+    category: "Frappe ERP",
     author: "TECHINCGLOBAL Team",
     date: "2024-12-12",
     readingTime: 10,
-    tags: ["Frappe", "ERPNext", "Technical", "Framework"],
+    tags: ["Frappe", "Frappe ERP", "Technical", "Framework"],
     metaTitle: "Understanding the Frappe Framework: A Technical Overview",
     metaDescription:
-      "Technical overview of the Frappe framework powering ERPNext. Architecture, extensibility, custom doctypes, and why it's ideal for enterprise ERP applications.",
+      "Technical overview of the Frappe framework powering Frappe ERP. Architecture, extensibility, custom doctypes, and why it's ideal for enterprise ERP applications.",
   },
   {
     slug: "nxtgen-methodology-reduces-erp-implementation-risk",

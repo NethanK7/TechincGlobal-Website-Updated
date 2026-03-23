@@ -55,43 +55,43 @@ interface BlogPostData {
 const blogPosts: BlogPostData[] = [
   {
     slug: "why-sri-lankan-businesses-choosing-erpnext",
-    title: "Why Sri Lankan Businesses Are Choosing ERPNext in 2025",
+    title: "Why Sri Lankan Businesses Are Choosing Frappe ERP in 2025",
     excerpt:
-      "Discover why a growing number of Sri Lankan enterprises are migrating to ERPNext for its cost-effectiveness, flexibility, and comprehensive feature set.",
-    category: "ERPNext",
+      "Discover why a growing number of Sri Lankan enterprises are migrating to Frappe ERP for its cost-effectiveness, flexibility, and comprehensive feature set.",
+    category: "Frappe ERP",
     date: "2025-01-15",
     readingTime: "8 min read",
     author: "TECHINCGLOBAL Team",
-    introduction: `<p>The enterprise resource planning landscape in Sri Lanka is undergoing a significant shift. As businesses face increasing pressure to digitize operations while managing costs, a growing number of enterprises are turning to ERPNext as their platform of choice. From mid-market manufacturers to large distribution companies, the trend is unmistakable: open-source ERP is no longer an experiment — it is a strategic decision.</p>
-<p>In this article, we explore the key factors driving ERPNext adoption across Sri Lanka, the tangible benefits organisations are realising, and why 2025 may be the tipping point for businesses still running legacy systems or spreadsheet-dependent workflows.</p>`,
+    introduction: `<p>The enterprise resource planning landscape in Sri Lanka is undergoing a significant shift. As businesses face increasing pressure to digitize operations while managing costs, a growing number of enterprises are turning to Frappe ERP as their platform of choice. From mid-market manufacturers to large distribution companies, the trend is unmistakable: open-source ERP is no longer an experiment — it is a strategic decision.</p>
+<p>In this article, we explore the key factors driving Frappe ERP adoption across Sri Lanka, the tangible benefits organisations are realising, and why 2025 may be the tipping point for businesses still running legacy systems or spreadsheet-dependent workflows.</p>`,
     sections: [
       {
         id: "cost-effectiveness",
         heading: "Cost-Effectiveness Without Compromise",
-        content: `<p>One of the most compelling reasons Sri Lankan businesses are choosing ERPNext is its total cost of ownership. Traditional ERP systems such as SAP Business One or Oracle NetSuite carry substantial licensing fees that can exceed LKR 10 million annually for a mid-sized operation — before factoring in implementation, customisation, and ongoing maintenance costs.</p>
-<p>ERPNext, built on the open-source Frappe framework, eliminates per-user licensing fees entirely. Businesses pay only for implementation, hosting, and support. For a typical 50-user deployment, this translates to savings of 60-70% compared to proprietary alternatives over a five-year period. These savings can be redirected toward training, process improvement, and scaling the system as the business grows.</p>
-<p>Importantly, cost savings do not come at the expense of functionality. ERPNext includes modules for accounting, inventory, manufacturing, HR, CRM, project management, and more — all integrated out of the box. Businesses are not purchasing a stripped-down product and paying for add-ons; they are getting a fully featured ERP platform from day one.</p>`,
+        content: `<p>One of the most compelling reasons Sri Lankan businesses are choosing Frappe ERP is its total cost of ownership. Traditional ERP systems such as SAP Business One or Oracle NetSuite carry substantial licensing fees that can exceed LKR 10 million annually for a mid-sized operation — before factoring in implementation, customisation, and ongoing maintenance costs.</p>
+<p>Frappe ERP, built on the open-source Frappe framework, eliminates per-user licensing fees entirely. Businesses pay only for implementation, hosting, and support. For a typical 50-user deployment, this translates to savings of 60-70% compared to proprietary alternatives over a five-year period. These savings can be redirected toward training, process improvement, and scaling the system as the business grows.</p>
+<p>Importantly, cost savings do not come at the expense of functionality. Frappe ERP includes modules for accounting, inventory, manufacturing, HR, CRM, project management, and more — all integrated out of the box. Businesses are not purchasing a stripped-down product and paying for add-ons; they are getting a fully featured ERP platform from day one.</p>`,
       },
       {
         id: "local-compliance",
         heading: "Built-In Support for Local Compliance",
         content: `<p>Sri Lankan businesses must comply with specific regulatory requirements including VAT, SVAT, PAYE, and EPF/ETF calculations. Many global ERP platforms treat these as afterthoughts, requiring expensive localisation modules or third-party integrations.</p>
-<p>ERPNext's open architecture allows certified implementation partners like TECHINCGLOBAL to build and maintain Sri Lanka-specific compliance features directly within the platform. This includes automated tax calculations aligned with Inland Revenue Department requirements, multi-currency support essential for import/export businesses, and statutory reporting templates that auditors recognise and accept.</p>
+<p>Frappe ERP's open architecture allows certified implementation partners like TECHINCGLOBAL to build and maintain Sri Lanka-specific compliance features directly within the platform. This includes automated tax calculations aligned with Inland Revenue Department requirements, multi-currency support essential for import/export businesses, and statutory reporting templates that auditors recognise and accept.</p>
 <p>The result is a system that not only manages day-to-day operations but also ensures regulatory compliance without manual workarounds or separate reporting tools.</p>`,
       },
       {
         id: "flexibility-customisation",
         heading: "Unmatched Flexibility and Customisation",
         content: `<p>Every business has unique processes that differentiate it from competitors. A garment manufacturer's quality control workflow, a tea exporter's blending and grading system, or a logistics company's route optimisation logic — these are the processes that cannot simply be forced into a rigid template.</p>
-<p>ERPNext's architecture is designed for customisation. Using the Frappe framework, developers can create custom doctypes (data models), workflows, print formats, and reports without modifying the core codebase. This means businesses can tailor the system precisely to their operations while still receiving upstream updates and security patches.</p>
-<p>For Sri Lankan enterprises, this flexibility is especially valuable. Many operate in niche industries or have evolved unique operational models over decades. ERPNext respects that reality rather than demanding wholesale process change to fit software limitations.</p>`,
+<p>Frappe ERP's architecture is designed for customisation. Using the Frappe framework, developers can create custom doctypes (data models), workflows, print formats, and reports without modifying the core codebase. This means businesses can tailor the system precisely to their operations while still receiving upstream updates and security patches.</p>
+<p>For Sri Lankan enterprises, this flexibility is especially valuable. Many operate in niche industries or have evolved unique operational models over decades. Frappe ERP respects that reality rather than demanding wholesale process change to fit software limitations.</p>`,
       },
       {
         id: "growing-ecosystem",
         heading: "A Growing Local Ecosystem",
-        content: `<p>Adopting any enterprise system requires confidence in the availability of local support, skilled implementers, and a community of peers. The ERPNext ecosystem in Sri Lanka has matured significantly over the past three years.</p>
+        content: `<p>Adopting any enterprise system requires confidence in the availability of local support, skilled implementers, and a community of peers. The Frappe ERP ecosystem in Sri Lanka has matured significantly over the past three years.</p>
 <p>Authorised partners like TECHINCGLOBAL provide end-to-end services including business process analysis, implementation, training, and ongoing support. The presence of local experts means businesses are not dependent on overseas consultants working across time zones — support is available in Sinhala, Tamil, and English during local business hours.</p>
-<p>Additionally, the global Frappe/ERPNext community contributes thousands of improvements annually. Sri Lankan businesses benefit from innovations developed by users worldwide, from manufacturing optimisations contributed by Indian factories to accounting enhancements driven by African enterprises.</p>`,
+<p>Additionally, the global Frappe/Frappe ERP community contributes thousands of improvements annually. Sri Lankan businesses benefit from innovations developed by users worldwide, from manufacturing optimisations contributed by Indian factories to accounting enhancements driven by African enterprises.</p>`,
       },
       {
         id: "implementation-speed",
@@ -101,8 +101,8 @@ const blogPosts: BlogPostData[] = [
 <p>Our data shows that the NXTGEN approach delivers complete implementations 40% faster than traditional waterfall methodologies, while achieving higher user adoption rates because stakeholders are involved throughout the process rather than being presented with a finished system they had no hand in shaping.</p>`,
       },
     ],
-    conclusion: `<p>The shift toward ERPNext among Sri Lankan businesses is driven by a pragmatic assessment of value, flexibility, and long-term viability. In an economic environment where every investment must justify itself, ERPNext offers enterprise-grade capabilities at a fraction of the cost of proprietary alternatives.</p>
-<p>If your organisation is evaluating ERP options or considering a migration from a legacy system, we invite you to explore how ERPNext and the NXTGEN methodology can accelerate your digital transformation. Contact TECHINCGLOBAL for a free consultation and discover what a modern, cost-effective ERP solution can do for your business.</p>`,
+    conclusion: `<p>The shift toward Frappe ERP among Sri Lankan businesses is driven by a pragmatic assessment of value, flexibility, and long-term viability. In an economic environment where every investment must justify itself, Frappe ERP offers enterprise-grade capabilities at a fraction of the cost of proprietary alternatives.</p>
+<p>If your organisation is evaluating ERP options or considering a migration from a legacy system, we invite you to explore how Frappe ERP and the NXTGEN methodology can accelerate your digital transformation. Contact TECHINCGLOBAL for a free consultation and discover what a modern, cost-effective ERP solution can do for your business.</p>`,
   },
   {
     slug: "true-cost-running-business-on-spreadsheets",
@@ -159,13 +159,13 @@ const blogPosts: BlogPostData[] = [
         id: "integration-difficulties",
         heading: "Integrating with Modern Tools Is Painful or Impossible",
         content: `<p>Today's business operations depend on seamless data flow between systems — your e-commerce platform, payment gateways, CRM, logistics partners, and banking systems all need to exchange data with your ERP. Legacy systems, particularly those built on outdated architectures, often lack modern APIs or require expensive middleware to achieve even basic integrations.</p>
-<p>If connecting a new sales channel or onboarding a logistics partner requires a six-month IT project, your ERP is actively limiting your ability to respond to market opportunities. Modern platforms like ERPNext are built API-first, making integrations straightforward and cost-effective.</p>`,
+<p>If connecting a new sales channel or onboarding a logistics partner requires a six-month IT project, your ERP is actively limiting your ability to respond to market opportunities. Modern platforms like Frappe ERP are built API-first, making integrations straightforward and cost-effective.</p>`,
       },
       {
         id: "vendor-support-declining",
         heading: "Vendor Support Is Declining or Costs Are Rising",
         content: `<p>Legacy ERP vendors often shift their focus to newer products, gradually reducing investment in older platforms. Support response times increase, patches become less frequent, and annual maintenance fees continue to rise even as the value delivered decreases. If your vendor is pushing you toward a migration to their newer (and more expensive) platform, it is worth evaluating whether that upgrade truly serves your interests or theirs.</p>
-<p>Open-source platforms like ERPNext offer a different model entirely — community-driven development ensures continuous improvement, and businesses are never locked into a single vendor's roadmap or pricing decisions.</p>`,
+<p>Open-source platforms like Frappe ERP offer a different model entirely — community-driven development ensures continuous improvement, and businesses are never locked into a single vendor's roadmap or pricing decisions.</p>`,
       },
     ],
     conclusion: `<p>If you recognised your organisation in any of these signs, the time to start planning your ERP replacement is now — not when the system fails catastrophically. A well-planned migration, executed with the right methodology, can transform your operations while minimising disruption. Reach out to our team for a no-obligation assessment of your current system and a roadmap for modernisation.</p>`,
@@ -174,13 +174,13 @@ const blogPosts: BlogPostData[] = [
     slug: "understanding-frappe-framework-technical-overview",
     title: "Understanding the Frappe Framework: A Technical Overview",
     excerpt:
-      "A deep dive into the Frappe framework that powers ERPNext, exploring its architecture, extensibility, and why it's ideal for enterprise applications.",
-    category: "ERPNext",
+      "A deep dive into the Frappe framework that powers Frappe ERP, exploring its architecture, extensibility, and why it's ideal for enterprise applications.",
+    category: "Frappe ERP",
     date: "2024-12-12",
     readingTime: "10 min read",
     author: "TECHINCGLOBAL Team",
-    introduction: `<p>ERPNext's capabilities are impressive, but to truly understand its potential, you need to look beneath the surface at the Frappe framework that powers it. Frappe is a full-stack, open-source web application framework built with Python and JavaScript that provides the foundation for rapid development of business applications.</p>
-<p>For technical decision-makers evaluating ERPNext, understanding Frappe is essential. It determines what customisations are possible, how the system scales, and what the long-term development experience looks like.</p>`,
+    introduction: `<p>Frappe ERP's capabilities are impressive, but to truly understand its potential, you need to look beneath the surface at the Frappe framework that powers it. Frappe is a full-stack, open-source web application framework built with Python and JavaScript that provides the foundation for rapid development of business applications.</p>
+<p>For technical decision-makers evaluating Frappe ERP, understanding Frappe is essential. It determines what customisations are possible, how the system scales, and what the long-term development experience looks like.</p>`,
     sections: [
       {
         id: "metadata-driven-architecture",
@@ -191,17 +191,17 @@ const blogPosts: BlogPostData[] = [
       {
         id: "extensibility-model",
         heading: "The Custom App Extensibility Model",
-        content: `<p>One of Frappe's most powerful features is its custom app architecture. Rather than modifying ERPNext's core code — which would create maintenance nightmares during upgrades — developers create separate custom apps that extend or override core functionality. These apps can add new DocTypes, override existing methods, add custom fields to standard forms, and introduce entirely new workflows.</p>
-<p>This separation of concerns means that businesses can heavily customise their ERPNext installation while still receiving upstream updates and security patches. It also means that industry-specific solutions can be packaged as reusable apps, reducing implementation time for similar businesses.</p>`,
+        content: `<p>One of Frappe's most powerful features is its custom app architecture. Rather than modifying Frappe ERP's core code — which would create maintenance nightmares during upgrades — developers create separate custom apps that extend or override core functionality. These apps can add new DocTypes, override existing methods, add custom fields to standard forms, and introduce entirely new workflows.</p>
+<p>This separation of concerns means that businesses can heavily customise their Frappe ERP installation while still receiving upstream updates and security patches. It also means that industry-specific solutions can be packaged as reusable apps, reducing implementation time for similar businesses.</p>`,
       },
       {
         id: "real-time-and-api",
         heading: "Real-Time Communication and API-First Design",
         content: `<p>Frappe includes built-in WebSocket support for real-time updates, a comprehensive REST API that exposes every DocType method, and a powerful RPC (Remote Procedure Call) layer for custom server-side logic. Every action that can be performed through the user interface can also be executed via the API, making Frappe applications inherently integration-friendly.</p>
-<p>For enterprises, this means connecting ERPNext to e-commerce platforms, mobile applications, IoT devices, or business intelligence tools is straightforward. The API layer is not an afterthought — it is a fundamental part of the framework's architecture.</p>`,
+<p>For enterprises, this means connecting Frappe ERP to e-commerce platforms, mobile applications, IoT devices, or business intelligence tools is straightforward. The API layer is not an afterthought — it is a fundamental part of the framework's architecture.</p>`,
       },
     ],
-    conclusion: `<p>Frappe represents a mature, well-architected framework that gives ERPNext its flexibility and extensibility. For businesses evaluating ERPNext, the strength of its underlying framework provides confidence that the platform can grow and adapt alongside their operations for years to come.</p>`,
+    conclusion: `<p>Frappe represents a mature, well-architected framework that gives Frappe ERP its flexibility and extensibility. For businesses evaluating Frappe ERP, the strength of its underlying framework provides confidence that the platform can grow and adapt alongside their operations for years to come.</p>`,
   },
   {
     slug: "nxtgen-methodology-reduces-erp-implementation-risk",
@@ -296,7 +296,7 @@ function getRelatedPosts(currentSlug: string): BlogPostData[] {
 
 function getCategoryColor(category: string): string {
   const colors: Record<string, string> = {
-    ERPNext: "bg-blue-50 text-blue-700 border-blue-200",
+    Frappe ERP: "bg-blue-50 text-blue-700 border-blue-200",
     "Digital Transformation": "bg-purple-50 text-purple-700 border-purple-200",
     "Business Automation": "bg-teal-50 text-teal-700 border-teal-200",
     "Best Practices": "bg-amber-50 text-amber-700 border-amber-200",
@@ -487,7 +487,7 @@ export default async function BlogPostPage({
                     Need Expert Guidance?
                   </h4>
                   <p className="mt-2 text-xs leading-relaxed text-text-secondary">
-                    Our certified ERPNext consultants can help you navigate your
+                    Our certified Frappe ERP consultants can help you navigate your
                     digital transformation journey.
                   </p>
                   <Button size="sm" className="mt-4 w-full" asChild>
@@ -515,7 +515,7 @@ export default async function BlogPostPage({
                 TECHINCGLOBAL Team
               </h3>
               <p className="mt-1 text-sm leading-relaxed text-text-secondary">
-                TECHINCGLOBAL is Sri Lanka&apos;s leading ERPNext implementation
+                TECHINCGLOBAL is Sri Lanka&apos;s leading Frappe ERP implementation
                 partner. Our team of certified consultants, developers, and
                 business analysts share their expertise through in-depth
                 articles on ERP strategy, digital transformation, and business
@@ -610,7 +610,7 @@ export default async function BlogPostPage({
       {/* ------------------------------------------------------------------ */}
       <CTASection
         heading="Need Expert Guidance?"
-        description="Our certified ERPNext consultants are ready to help you plan and execute your digital transformation. Book a free consultation to discuss your specific needs."
+        description="Our certified Frappe ERP consultants are ready to help you plan and execute your digital transformation. Book a free consultation to discuss your specific needs."
         primaryButton={{
           label: "Book Free Consultation",
           href: "/contact",

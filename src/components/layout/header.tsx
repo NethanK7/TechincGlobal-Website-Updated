@@ -4,9 +4,11 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { Capacitor } from "@capacitor/core";
 import { mainNavItems, ctaButton } from "@/config/navigation";
 import type { NavItem } from "@/types";
 import { useLayoutMode } from "./layout-provider";
+import { SearchOverlay } from "./search-overlay";
 
 // ---------------------------------------------------------------------------
 // Icon components (inline SVGs to avoid external dependency for layout)
@@ -492,10 +494,17 @@ export function Header() {
   });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [isNative, setIsNative] = useState(false);
 
-  const { viewMode, setViewMode } = useLayoutMode();
+  useEffect(() => {
+    if (Capacitor.isNativePlatform()) {
+      setIsNative(true);
+    }
+  }, []);
 
-  const isDarkBg = !scrolled && (pathname === "/" || pathname === "/frappe" || pathname === "/erpnext");
+  const { viewMode, setViewMode, searchOpen, setSearchOpen } = useLayoutMode();
+
+  const isDarkBg = false;
 
   // Track scroll position for header background transition
   const handleScroll = useCallback(() => {
@@ -507,17 +516,22 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
-  // Close dropdowns on Escape key
+  // Close dropdowns on Escape key and handle Search Shortcut
   useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setOpenDropdown(null);
         setMobileMenuOpen(false);
       }
+      // Cmd/Ctrl + K or Cmd/Ctrl + F to open search mapping
+      if ((e.metaKey || e.ctrlKey) && (e.key === "k" || e.key === "f")) {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
     };
-    document.addEventListener("keydown", handleEscape);
-    return () => document.removeEventListener("keydown", handleEscape);
-  }, []);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [setSearchOpen]);
 
   return (
     <>
@@ -532,13 +546,14 @@ export function Header() {
       <header
         className={cn(
           "fixed top-0 right-0 left-0 z-50 transition-all duration-300",
-          scrolled
-            ? "border-b border-surface-border/60 bg-white/90 shadow-soft backdrop-blur-xl"
-            : "bg-transparent"
+          "border-b border-surface-border/60 bg-white/95 shadow-soft backdrop-blur-xl"
         )}
         role="banner"
       >
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-18 sm:px-6 lg:h-20 lg:px-8">
+        <div className={cn(
+          "mx-auto flex w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8",
+          isNative ? "safe-pt h-[calc(4rem+env(safe-area-inset-top))] sm:h-[calc(4.5rem+env(safe-area-inset-top))] lg:h-[calc(5rem+env(safe-area-inset-top))]" : "h-16 sm:h-18 lg:h-20"
+        )}>
           {/* Logo */}
           <Logo scrolled={scrolled} isDarkBg={isDarkBg} />
 
@@ -584,6 +599,20 @@ export function Header() {
 
           {/* Right section: CTA + Mobile toggle */}
           <div className="flex items-center gap-3">
+            {/* Search Button */}
+            <button
+              type="button"
+              onClick={() => setSearchOpen(true)}
+              className={cn(
+                "inline-flex items-center justify-center rounded-lg p-2 transition-all duration-200",
+                "text-text-secondary hover:bg-surface-muted hover:text-text-primary"
+              )}
+              title="Search website"
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
             {/* Workspace Toggle */}
             <button
               type="button"
@@ -617,34 +646,48 @@ export function Header() {
             </Link>
 
             {/* Mobile menu toggle */}
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={cn(
-                "inline-flex items-center justify-center rounded-lg p-2 transition-colors lg:hidden",
-                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-                scrolled
-                  ? "text-text-primary hover:bg-surface-muted"
-                  : "text-text-primary hover:bg-surface-muted"
-              )}
-              aria-expanded={mobileMenuOpen}
-              aria-controls="mobile-navigation"
-              aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
-            >
-              {mobileMenuOpen ? <XIcon /> : <MenuIcon />}
-            </button>
+            {!isNative && (
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className={cn(
+                  "inline-flex items-center justify-center rounded-lg p-2 transition-colors lg:hidden",
+                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                  scrolled
+                    ? "text-text-primary hover:bg-surface-muted"
+                    : "text-text-primary hover:bg-surface-muted"
+                )}
+                aria-expanded={mobileMenuOpen}
+                aria-controls="mobile-navigation"
+                aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              >
+                {mobileMenuOpen ? <XIcon /> : <MenuIcon />}
+              </button>
+            )}
           </div>
         </div>
       </header>
 
-      {/* Mobile navigation drawer */}
-      <MobileNav
-        isOpen={mobileMenuOpen}
-        onClose={() => setMobileMenuOpen(false)}
-      />
+      {/* Mobile navigation drawer - Hidden for Native as we use bottom tab bar */}
+      {!isNative && (
+        <MobileNav
+          isOpen={mobileMenuOpen}
+          onClose={() => setMobileMenuOpen(false)}
+        />
+      )}
 
       {/* Spacer to offset fixed header height */}
-      {!isDarkBg && <div className="h-16 sm:h-18 lg:h-20" aria-hidden="true" />}
+      {!isDarkBg && (
+        <div 
+          className={cn(
+            isNative ? "h-[calc(4rem+env(safe-area-inset-top))] sm:h-[calc(4.5rem+env(safe-area-inset-top))] lg:h-[calc(5rem+env(safe-area-inset-top))]" : "h-16 sm:h-18 lg:h-20"
+          )} 
+          aria-hidden="true" 
+        />
+      )}
+
+      {/* Global Search Overlay */}
+      <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
   );
 }

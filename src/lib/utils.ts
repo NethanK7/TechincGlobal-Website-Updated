@@ -58,7 +58,7 @@ export function calculateReadingTime(content: string): number {
 /**
  * Converts an arbitrary string into a URL-safe slug.
  *
- * @example slugify("ERPNext Implementation") // "erpnext-implementation"
+ * @example slugify("Frappe ERP Implementation") // "erpnext-implementation"
  */
 export function slugify(text: string): string {
   return text

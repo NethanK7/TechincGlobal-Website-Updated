@@ -6,16 +6,16 @@ import { BarChartCard, FlowDiagramCard } from "@/components/shared/visuals";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "ERPNext Implementation Services | TECHINCGLOBAL",
+  title: "Frappe ERP Implementation Services | TECHINCGLOBAL",
   description:
-    "ERPNext implementation, rollout, localization, integration, and support services for finance, supply chain, manufacturing, HR, projects, and customer operations.",
+    "Frappe ERP implementation, rollout, localization, integration, and support services for finance, supply chain, manufacturing, HR, projects, and customer operations.",
 };
 
 const platformPillars = [
   {
     title: "One connected data model",
     description:
-      "ERPNext connects finance, procurement, inventory, sales, projects, assets, HR, CRM, support, and manufacturing on the same transaction backbone. That reduces duplicate entries, reconciliation delays, and reporting conflicts.",
+      "Frappe ERP connects finance, procurement, inventory, sales, projects, assets, HR, CRM, support, and manufacturing on the same transaction backbone. That reduces duplicate entries, reconciliation delays, and reporting conflicts.",
   },
   {
     title: "Broad business coverage",
@@ -25,7 +25,7 @@ const platformPillars = [
   {
     title: "Extensible without lock-in",
     description:
-      "Because ERPNext is built on the Frappe framework, workflows, forms, automations, reports, portals, and integrations can be extended cleanly when your operation needs more than default configuration.",
+      "Because Frappe ERP is built on the Frappe framework, workflows, forms, automations, reports, portals, and integrations can be extended cleanly when your operation needs more than default configuration.",
   },
 ];
 
@@ -87,7 +87,7 @@ const implementationTracks = [
   {
     title: "Localization and compliance",
     description:
-      "Where customers need Sri Lanka-specific print formats, tax logic, approval documents, or management packs, we configure and extend ERPNext around those requirements instead of forcing workarounds.",
+      "Where customers need Sri Lanka-specific print formats, tax logic, approval documents, or management packs, we configure and extend Frappe ERP around those requirements instead of forcing workarounds.",
   },
   {
     title: "Integration and extension",
@@ -102,8 +102,8 @@ const implementationTracks = [
 ];
 
 const whyCompaniesChooseUs = [
-  "We implement ERPNext around real operating models, not generic demo processes.",
-  "We combine configuration discipline with Frappe engineering when standard ERPNext needs to be extended.",
+  "We implement Frappe ERP around real operating models, not generic demo processes.",
+  "We combine configuration discipline with Frappe engineering when standard Frappe ERP needs to be extended.",
   "We phase programs to reduce disruption, improve adoption, and protect finance and inventory integrity.",
   "We build leadership dashboards and operating controls, not just transaction screens.",
 ];
@@ -176,7 +176,7 @@ const controlSignals = [
   },
 ];
 
-export default function ERPNextPage() {
+export default function FrappeERPPage() {
   return (
     <div className="bg-[#F9FBFC]">
       <section className="bg-hero-gradient py-16 text-inverse sm:py-24">
@@ -187,18 +187,18 @@ export default function ERPNextPage() {
                 ERP Platform
               </span>
               <h1 className="mt-3 text-display-md font-bold text-white sm:text-display-lg">
-                ERPNext implementation for companies that need one system to run finance,
+                Frappe ERP implementation for companies that need one system to run finance,
                 operations, and growth.
               </h1>
               <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/75">
-                ERPNext is a full business platform built on Frappe. TECHINCGLOBAL uses
+                Frappe ERP is a full business platform built on Frappe. TECHINCGLOBAL uses
                 it to unify finance, inventory, procurement, customer operations,
                 manufacturing, projects, HR, and reporting into one operating model that
                 leadership can trust.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <Button size="lg" asChild>
-                  <Link href="/contact">Talk to an ERPNext Consultant</Link>
+                  <Link href="/contact">Talk to an Frappe ERP Consultant</Link>
                 </Button>
                 <Button
                   size="lg"
@@ -242,10 +242,10 @@ export default function ERPNextPage() {
                 Capability Map
               </span>
               <h2 className="mt-2 text-display-sm font-bold text-text-primary">
-                What ERPNext can cover across your business
+                What Frappe ERP can cover across your business
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-text-secondary">
-                ERPNext is not just an accounting package or inventory tool. It is a
+                Frappe ERP is not just an accounting package or inventory tool. It is a
                 broad operating platform that supports commercial, operational, and
                 control workflows across the company.
               </p>
@@ -283,7 +283,7 @@ export default function ERPNextPage() {
             <FadeUp>
               <FlowDiagramCard
                 eyebrow="Enterprise Flow"
-                title="How ERPNext links transactions from demand to decision"
+                title="How Frappe ERP links transactions from demand to decision"
                 steps={dataFlow}
               />
             </FadeUp>
@@ -306,10 +306,10 @@ export default function ERPNextPage() {
                 Delivery Model
               </span>
               <h2 className="mt-2 text-display-sm font-bold">
-                How TECHINCGLOBAL implements ERPNext
+                How TECHINCGLOBAL implements Frappe ERP
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-white/70">
-                We treat ERPNext as a business transformation platform. The project is
+                We treat Frappe ERP as a business transformation platform. The project is
                 structured around process design, data integrity, operating control, user
                 adoption, and long-term maintainability, not just module activation.
               </p>
@@ -362,7 +362,7 @@ export default function ERPNextPage() {
                 Business Impact
               </span>
               <h2 className="mt-2 text-display-sm font-bold text-text-primary">
-                What a strong ERPNext rollout should change
+                What a strong Frappe ERP rollout should change
               </h2>
             </div>
           </FadeUp>
@@ -387,7 +387,7 @@ export default function ERPNextPage() {
         <Container size="sm" className="text-center">
           <FadeUp>
             <h2 className="text-display-sm font-bold text-white">
-              Need ERPNext to fit the way your company actually runs?
+              Need Frappe ERP to fit the way your company actually runs?
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-white/70">
               We can help you scope the rollout, identify the highest-risk process gaps,

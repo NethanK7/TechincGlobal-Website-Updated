@@ -14,16 +14,16 @@ import { StaggerContainer, StaggerItem } from "@/components/shared/motion-wrappe
 const services = [
   {
     icon: "Settings",
-    title: "ERPNext Implementation",
+    title: "NextGen ERP Implementation",
     description:
-      "End-to-end ERPNext deployment from planning to go-live.",
+      "End-to-end NextGen ERP deployment from planning to go-live.",
     slug: "erpnext-implementation",
   },
   {
     icon: "Code",
-    title: "Frappe Customization",
+    title: "Frappe Implementation",
     description:
-      "Custom applications built on the Frappe framework.",
+      "Comprehensive Frappe solutions not Frappe ERP.",
     slug: "frappe-customization-development",
   },
   {
@@ -37,14 +37,14 @@ const services = [
     icon: "RefreshCw",
     title: "Legacy Modernization",
     description:
-      "Migrate from outdated systems to modern ERPNext.",
+      "Migrate from outdated systems to modern Frappe.",
     slug: "legacy-system-modernization",
   },
   {
     icon: "Link2",
     title: "System Integration",
     description:
-      "Connect ERPNext with third-party platforms and APIs.",
+      "Connect Frappe with third-party platforms and APIs.",
     slug: "system-integration",
   },
   {
@@ -77,7 +77,7 @@ function ServicesOverview() {
         <SectionHeader
           eyebrow="Our Services"
           title="End-to-End ERP Solutions for Modern Enterprises"
-          description="From initial consulting through implementation to ongoing support, we deliver comprehensive ERPNext solutions tailored to your unique business requirements."
+          description="From initial consulting through implementation to ongoing support, we deliver comprehensive Frappe solutions tailored to your unique business requirements."
           align="center"
         />
 

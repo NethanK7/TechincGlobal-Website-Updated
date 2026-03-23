@@ -14,7 +14,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "TECHINCGLOBAL | NXTGEN ERP Solutions",
     description:
-        "Sri Lanka's leading ERPNext implementation partner. Accelerate your digital transformation with our proprietary NXTGEN Agile methodology. Authorized Frappe Technologies partner.",
+        "Sri Lanka's leading Frappe ERP implementation partner. Accelerate your digital transformation with our proprietary NXTGEN Agile methodology. Authorized Frappe Technologies partner.",
     alternates: { canonical: "https://techincglobal.com" },
 };
 

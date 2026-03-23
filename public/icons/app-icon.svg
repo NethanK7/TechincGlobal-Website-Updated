@@ -1,0 +1,20 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)" />
+  <rect x="142" y="142" width="740" height="740" rx="182" fill="url(#panel)" fill-opacity="0.22" stroke="rgba(255,255,255,0.22)" />
+  <rect x="220" y="220" width="250" height="250" rx="70" fill="white" fill-opacity="0.16" stroke="rgba(255,255,255,0.24)" />
+  <path d="M300 302H612V376H496V722H416V376H300V302Z" fill="#EFF6FF"/>
+  <path d="M548 474H728C777.706 474 818 514.294 818 564V612C818 661.706 777.706 702 728 702H548V474Z" fill="#DBEAFE"/>
+  <path d="M548 322H804V396H548V322Z" fill="#EFF6FF" fill-opacity="0.92"/>
+  <text x="220" y="836" fill="#EFF6FF" font-family="Arial, Helvetica, sans-serif" font-size="118" font-weight="700" letter-spacing="-0.06em">TECHINCGLOBAL</text>
+  <defs>
+    <linearGradient id="bg" x1="92" y1="68" x2="882" y2="938" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A" />
+      <stop offset="0.58" stop-color="#1D4ED8" />
+      <stop offset="1" stop-color="#60A5FA" />
+    </linearGradient>
+    <linearGradient id="panel" x1="206" y1="182" x2="816" y2="836" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.2" />
+      <stop offset="1" stop-color="white" stop-opacity="0.04" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { teamMembers, companyValues, companyTimeline } from "@/content/company";
 
 export const metadata: Metadata = {
-    title: "About TECHINCGLOBAL | Sri Lanka's ERPNext Specialists",
+    title: "About TECHINCGLOBAL | Sri Lanka's Frappe ERP Specialists",
     description:
         "Founded in 2018, TECHINCGLOBAL is Sri Lanka's authorized Frappe Technologies partner and part of the SEBSA Group. Learn about our team, mission, and NXTGEN methodology.",
     alternates: { canonical: "https://techincglobal.com/about" },
@@ -52,7 +52,7 @@ export default function AboutPage() {
                                     <p>
                                         Our partnership with Frappe Technologies marked a pivotal milestone.
                                         As the first authorized Frappe partner in Sri Lanka, we combined cutting-edge
-                                        ERPNext technology with our proprietary NXTGEN Agile implementation methodology —
+                                        Frappe ERP technology with our proprietary NXTGEN Agile implementation methodology —
                                         creating an approach that consistently delivers faster, more predictable go-lives.
                                     </p>
                                     <p>
@@ -197,7 +197,7 @@ export default function AboutPage() {
                                     name: "Frappe Technologies",
                                     badge: "Highly Skilled Certified Bronze Partner",
                                     description:
-                                        "TECHINCGLOBAL is the first authorized Frappe Technologies partner in Sri Lanka. Our Highly Skilled Certified Bronze Partner status reflects our certified expertise across ERPNext implementation, Frappe development, and platform support.",
+                                        "TECHINCGLOBAL is the first authorized Frappe Technologies partner in Sri Lanka. Our Highly Skilled Certified Bronze Partner status reflects our certified expertise across Frappe ERP implementation, Frappe development, and platform support.",
                                 },
                                 {
                                     name: "SEBSA Group",

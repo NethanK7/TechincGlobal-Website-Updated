@@ -12,7 +12,7 @@ export interface ServiceNavItem {
 
 export const serviceItems: ServiceNavItem[] = [
   {
-    label: "ERPNext Implementation",
+    label: "Frappe ERP Implementation",
     slug: "erpnext-implementation",
     href: "/services/erpnext-implementation",
   },
@@ -119,7 +119,7 @@ export const mainNavItems: NavItem[] = [
     label: "Platforms",
     href: "#",
     children: [
-      { label: "ERPNext", href: "/erpnext" },
+      { label: "Frappe ERP", href: "/erpnext" },
       { label: "Frappe Framework", href: "/frappe" },
     ],
   },

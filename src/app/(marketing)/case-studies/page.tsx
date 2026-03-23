@@ -34,7 +34,7 @@ import { TestimonialCard } from "@/components/shared/testimonial-card";
 export const metadata: Metadata = {
   title: "Case Studies | ERP Success Stories",
   description:
-    "Explore how TECHINCGLOBAL has helped businesses transform operations with ERPNext. Real results from real implementations.",
+    "Explore how TECHINCGLOBAL has helped businesses transform operations with Frappe ERP. Real results from real implementations.",
 };
 
 // ---------------------------------------------------------------------------
@@ -54,7 +54,7 @@ interface CaseStudy {
 const caseStudies: CaseStudy[] = [
   {
     slug: "manufacturing-erp-transformation",
-    title: "Leading Manufacturer Achieves 35% Efficiency Gain with ERPNext",
+    title: "Leading Manufacturer Achieves 35% Efficiency Gain with Frappe ERP",
     client:
       "A leading garment manufacturing company in Sri Lanka" /* TODO_CLIENT_CONFIRMATION */,
     industry: "Manufacturing",
@@ -109,7 +109,7 @@ const caseStudies: CaseStudy[] = [
 const testimonials = [
   {
     quote:
-      "The implementation was smooth and well-managed. TECHINCGLOBAL's team understood our manufacturing processes deeply and configured ERPNext to match our exact workflows. Within three months, we had real-time visibility across all our facilities for the first time in our company's history." /* TODO_CLIENT_CONFIRMATION */,
+      "The implementation was smooth and well-managed. TECHINCGLOBAL's team understood our manufacturing processes deeply and configured Frappe ERP to match our exact workflows. Within three months, we had real-time visibility across all our facilities for the first time in our company's history." /* TODO_CLIENT_CONFIRMATION */,
     authorName: "Operations Director",
     role: "Senior Management",
     company: "Leading Garment Manufacturer" /* TODO_CLIENT_CONFIRMATION */,
@@ -161,7 +161,7 @@ export default function CaseStudiesPage() {
             <SectionHeader
               eyebrow="Case Studies"
               title="Success Stories"
-              description="Real results from real implementations. Explore how organisations across Sri Lanka have transformed their operations with ERPNext and the NXTGEN methodology."
+              description="Real results from real implementations. Explore how organisations across Sri Lanka have transformed their operations with Frappe ERP and the NXTGEN methodology."
               titleSize="lg"
               align="center"
             />
@@ -372,7 +372,7 @@ export default function CaseStudiesPage() {
       {/* ------------------------------------------------------------------ */}
       <CTASection
         heading="Ready to Write Your Success Story?"
-        description="Join the growing number of Sri Lankan businesses that have transformed their operations with ERPNext. Let's discuss how we can help you achieve measurable results."
+        description="Join the growing number of Sri Lankan businesses that have transformed their operations with Frappe ERP. Let's discuss how we can help you achieve measurable results."
         primaryButton={{
           label: "Book Free Consultation",
           href: "/contact",

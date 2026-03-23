@@ -7,44 +7,44 @@ import { FadeUp } from "@/components/shared/motion-wrapper";
 const phases = [
     {
         number: "01",
-        title: "Discover",
+        title: "Design",
         description:
-            "Deep-dive workshops with stakeholders to map processes, requirements, and business objectives.",
-        color: "from-blue-500/20 to-blue-600/10",
+            "Solution architecture, blueprints, and data models aligned to your exact business objectives.",
+        color: "from-blue-500/10 to-blue-600/5",
     },
     {
         number: "02",
-        title: "Design",
+        title: "Segregate",
         description:
-            "Solution architecture, data models, and configuration blueprints — aligned before any build begins.",
-        color: "from-sky-500/20 to-sky-600/10",
+            "Break down deployments into modular, isolated tracks to minimize disruption.",
+        color: "from-sky-500/10 to-sky-600/5",
     },
     {
         number: "03",
-        title: "Configure",
+        title: "Cyclic Mapping",
         description:
-            "Agile sprints deliver working functionality in two-week cycles with regular stakeholder demos.",
-        color: "from-teal-500/20 to-teal-600/10",
+            "Agile, iterative mapping mapping to validate solutions continuously throughout the project.",
+        color: "from-teal-500/10 to-teal-600/5",
     },
     {
         number: "04",
-        title: "Deploy",
+        title: "Training",
         description:
-            "Validated go-live with hypercare support, ensuring your team is confident and operational from day one.",
-        color: "from-emerald-500/20 to-emerald-600/10",
+            "Comprehensive, role-based enablement to ensure your team is confident and ready.",
+        color: "from-emerald-500/10 to-emerald-600/5",
     },
     {
         number: "05",
-        title: "Optimize",
+        title: "Go Live Authorisation",
         description:
-            "Continuous improvement post-launch: adoption monitoring, performance tuning, and proactive enhancements.",
-        color: "from-violet-500/20 to-violet-600/10",
+            "Final approvals, sign-offs, and seamless transitional adoption into the production environment.",
+        color: "from-violet-500/10 to-violet-600/5",
     },
 ];
 
 function MethodologyPreview() {
     return (
-        <section className="section-padding bg-brand-navy" aria-labelledby="methodology-heading">
+        <section className="section-padding bg-white" aria-labelledby="methodology-heading">
             <Container>
                 <FadeUp>
                     <SectionHeader
@@ -52,7 +52,6 @@ function MethodologyPreview() {
                         title="The NXTGEN Methodology"
                         description="A proprietary Agile framework designed for ERP implementation — delivering faster go-lives, higher adoption rates, and measurable ROI."
                         id="methodology-heading"
-                        dark
                     />
                 </FadeUp>
 
@@ -60,22 +59,22 @@ function MethodologyPreview() {
                     {phases.map((phase, i) => (
                         <FadeUp key={phase.number} delay={i * 0.1}>
                             <div
-                                className={`group relative flex h-full flex-col rounded-2xl bg-gradient-to-br ${phase.color} border border-white/10 p-6 transition-all hover:border-white/20 hover:bg-white/5`}
+                                className={`group relative flex h-full flex-col rounded-2xl bg-gradient-to-br ${phase.color} border border-brand-navy/5 p-6 transition-all hover:border-brand-navy/10 hover:shadow-md`}
                             >
-                                <span className="font-mono text-3xl font-bold text-white/20">
+                                <span className="font-mono text-3xl font-bold text-brand-navy/20">
                                     {phase.number}
                                 </span>
-                                <h3 className="mt-3 text-lg font-semibold text-white">
+                                <h3 className="mt-3 text-lg font-semibold text-text-primary">
                                     {phase.title}
                                 </h3>
-                                <p className="mt-2 text-sm leading-relaxed text-white/60">
+                                <p className="mt-2 text-sm leading-relaxed text-text-secondary">
                                     {phase.description}
                                 </p>
 
                                 {/* Connector line for desktop */}
                                 {i < phases.length - 1 && (
                                     <div
-                                        className="pointer-events-none absolute -right-2 top-1/2 hidden h-px w-4 -translate-y-1/2 bg-white/20 lg:block"
+                                        className="pointer-events-none absolute -right-2 top-1/2 hidden h-px w-4 -translate-y-1/2 bg-brand-navy/20 lg:block"
                                         aria-hidden="true"
                                     />
                                 )}

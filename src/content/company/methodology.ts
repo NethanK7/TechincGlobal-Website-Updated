@@ -23,9 +23,9 @@ export const methodologyContent = {
       title: "Design",
       duration: "Weeks 2–4",
       description:
-        "Your Solution Blueprint is translated into a detailed ERPNext design. Data models, configuration specifications, custom development requirements, integration architecture, and go-live plan are defined — with stakeholder review at every step.",
+        "Your Solution Blueprint is translated into a detailed Frappe ERP design. Data models, configuration specifications, custom development requirements, integration architecture, and go-live plan are defined — with stakeholder review at every step.",
       activities: [
-        "ERPNext configuration specification",
+        "Frappe ERP configuration specification",
         "Custom development requirements specification",
         "Data migration mapping and cleansing plan",
         "Integration architecture design",
@@ -44,14 +44,14 @@ export const methodologyContent = {
       description:
         "Agile development sprints deliver working, tested functionality in two-week cycles. At the end of each sprint, stakeholders review real configurations — not slides. This continuous feedback loop ensures the system is built correctly from the start.",
       activities: [
-        "ERPNext configuration and setup",
+        "Frappe ERP configuration and setup",
         "Custom app and script development",
         "Integration connector development",
         "Data migration script development and testing",
         "Sprint demos and stakeholder feedback sessions",
       ],
       outputs: [
-        "Fully configured ERPNext staging environment",
+        "Fully configured Frappe ERP staging environment",
         "Tested custom developments",
         "Working integrations",
         "Validated data migration scripts",
@@ -80,11 +80,11 @@ export const methodologyContent = {
       title: "Optimize",
       duration: "Ongoing",
       description:
-        "The go-live is the beginning, not the end. We track adoption metrics, identify improvement opportunities, manage version upgrades, and provide ongoing support to ensure your ERPNext investment continues to deliver value as your business grows.",
+        "The go-live is the beginning, not the end. We track adoption metrics, identify improvement opportunities, manage version upgrades, and provide ongoing support to ensure your Frappe ERP investment continues to deliver value as your business grows.",
       activities: [
         "Adoption monitoring and user coaching",
         "Quarterly optimization reviews",
-        "Managed ERPNext version upgrades",
+        "Managed Frappe ERP version upgrades",
         "Enhancement backlog management",
         "Performance tuning and health checks",
       ],

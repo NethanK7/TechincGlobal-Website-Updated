@@ -10,7 +10,7 @@ import { industries } from "@/content/industries";
 export const metadata: Metadata = {
     title: "Industries We Serve | TECHINCGLOBAL",
     description:
-        "ERPNext solutions tailored for manufacturing, distribution, retail, healthcare, education, construction, and more. Industry-specific expertise from Sri Lanka's leading Frappe partner.",
+        "Frappe ERP solutions tailored for manufacturing, distribution, retail, healthcare, education, construction, and more. Industry-specific expertise from Sri Lanka's leading Frappe partner.",
     alternates: { canonical: "https://techincglobal.com/industries" },
 };
 
@@ -32,7 +32,7 @@ const industryFlow = [
     },
     {
         title: "Configure the process core",
-        description: "ERPNext modules, approvals, controls, documents, and dashboards are aligned to the sector workflow.",
+        description: "Frappe ERP modules, approvals, controls, documents, and dashboards are aligned to the sector workflow.",
     },
     {
         title: "Extend where needed",
@@ -84,7 +84,7 @@ export default function IndustriesPage() {
                         </h1>
                         <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/70">
                             Every industry has unique workflows, compliance requirements, and operational challenges.
-                            Our ERPNext implementations are configured to match your sector&apos;s exact needs —
+                            Our Frappe ERP implementations are configured to match your sector&apos;s exact needs —
                             not forced into a generic template.
                         </p>
                     </FadeUp>
@@ -97,7 +97,7 @@ export default function IndustriesPage() {
                         <FadeUp>
                             <FlowDiagramCard
                                 eyebrow="Industry Fit Model"
-                                title="How we shape ERPNext and Frappe around sector-specific operations"
+                                title="How we shape Frappe ERP and Frappe around sector-specific operations"
                                 steps={industryFlow}
                             />
                         </FadeUp>
@@ -160,7 +160,7 @@ export default function IndustriesPage() {
                             Don&apos;t See Your Industry?
                         </h2>
                         <p className="mt-4 text-lg text-white/70">
-                            ERPNext is flexible enough to fit virtually any sector. Contact us to discuss your specific requirements.
+                            Frappe ERP is flexible enough to fit virtually any sector. Contact us to discuss your specific requirements.
                         </p>
                         <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
                             <Button size="lg" asChild>

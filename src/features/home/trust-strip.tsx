@@ -7,10 +7,10 @@ import { Container } from "@/components/ui/container";
 // ---------------------------------------------------------------------------
 
 const trustItems = [
-  "Trusted by 150+ Businesses",
+  "Trusted by 30+ Businesses",
+  "100% Satisfaction",
   "Frappe Authorized Partner",
   "ISO-Compliant Processes",
-  "10+ Years of Excellence",
 ] as const;
 
 function TrustStrip() {

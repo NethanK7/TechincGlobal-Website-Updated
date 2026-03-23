@@ -35,7 +35,7 @@ const whatWeBuild = [
     items: ["Procurement control apps", "Field service workflows", "Internal portals", "Approval-heavy line-of-business systems"],
   },
   {
-    title: "ERPNext extensions",
+    title: "Frappe ERP extensions",
     items: ["Custom DocTypes", "Industry-specific workflows", "Approval matrices", "Management dashboards and reports"],
   },
   {
@@ -97,7 +97,7 @@ const companyApproach = [
 const useCases = [
   "Replacing approval-heavy spreadsheets and email-based request handling with controlled digital workflows.",
   "Building portals and internal apps around procurement, service delivery, customer onboarding, compliance, or operations support.",
-  "Extending ERPNext where industry-specific forms, calculations, reports, or interfaces are required.",
+  "Extending Frappe ERP where industry-specific forms, calculations, reports, or interfaces are required.",
   "Creating a central orchestration layer between multiple business systems without introducing another fragmented toolset.",
 ];
 
@@ -166,7 +166,7 @@ export default function FrappePage() {
                 rebuilding the basics from scratch.
               </h1>
               <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/75">
-                Frappe is the framework underneath ERPNext, but it is also a strong
+                Frappe is the framework underneath Frappe ERP, but it is also a strong
                 platform for custom operational software. TECHINCGLOBAL uses Frappe to
                 build extensions, portals, workflows, integrations, and full business
                 applications that stay aligned with real operating requirements.
@@ -181,7 +181,7 @@ export default function FrappePage() {
                   className="border-white/20 bg-white/5 text-white hover:bg-white/10 hover:text-white"
                   asChild
                 >
-                  <Link href="/erpnext">See ERPNext Services</Link>
+                  <Link href="/erpnext">See Frappe ERP Services</Link>
                 </Button>
               </div>
             </div>
