@@ -163,7 +163,7 @@ const recentBlogPosts = [
 
 function getCategoryColor(category: string): string {
   const colors: Record<string, string> = {
-    Frappe ERP: "bg-blue-50 text-blue-700 border-blue-200",
+    "Frappe ERP": "bg-blue-50 text-blue-700 border-blue-200",
     "Digital Transformation": "bg-purple-50 text-purple-700 border-purple-200",
     "Best Practices": "bg-amber-50 text-amber-700 border-amber-200",
   };
