@@ -37,7 +37,7 @@ const phases = [
         number: "05",
         title: "Go Live Authorisation",
         description:
-            "The final approval bases on multiple approvals coming out ofthe cyclic mapping process.",
+            "The final approval based on multiple approvals derived out of the cyclic mapping process.",
         color: "from-violet-500/10 to-violet-600/5",
     },
 ];
