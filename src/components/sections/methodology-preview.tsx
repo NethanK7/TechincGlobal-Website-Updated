@@ -23,7 +23,7 @@ const phases = [
         number: "03",
         title: "Cyclic Mapping",
         description:
-            "Agile, iterative mapping mapping to validate solutions continuously throughout the project.",
+            "Agile, iterative mapping to validate solutions continuously throughout the project cycle.",
         color: "from-teal-500/10 to-teal-600/5",
     },
     {
@@ -37,7 +37,7 @@ const phases = [
         number: "05",
         title: "Go Live Authorisation",
         description:
-            "Final approvals, sign-offs, and seamless transitional adoption into the production environment.",
+            "The final approval bases on multiple approvals coming out ofthe cyclic mapping process.",
         color: "from-violet-500/10 to-violet-600/5",
     },
 ];

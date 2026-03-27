@@ -20,13 +20,13 @@ const differentiators = [
     icon: Award,
     title: "Frappe Certified Expertise",
     description:
-      "As the only authorized Frappe Technologies partner for Sri Lanka and regional tax, we bring true certified expertise. TECHINCGLOBAL is also responsible for all Sri Lankan localisation of the Frappe platform.",
+      "As the only authorized Frappe Technologies partner for Sri Lanka, we bring true certified expertise. TECHINCGLOBAL is also responsible for all Sri Lankan localisations of the Frappe platform.",
   },
   {
     icon: Globe,
-    title: "Local Insight, Global Standards",
+    title: "Local Insight, Regional Insights and Global Standards",
     description:
-      "Deep understanding of the Sri Lankan business landscape combined with international best practices and delivery standards.",
+      "Deep understanding of the regional business landscapes combined with international best practices and delivery standards.",
   },
 ] as const;
 
