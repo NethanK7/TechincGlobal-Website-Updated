@@ -14,9 +14,9 @@ import { StaggerContainer, StaggerItem } from "@/components/shared/motion-wrappe
 const services = [
   {
     icon: "Settings",
-    title: "NextGen ERP Implementation",
+    title: "NXTGEN ERP Implementation",
     description:
-      "End-to-end NextGen ERP deployment from planning to go-live.",
+      "End-to-end NXTGEN ERP deployment from planning to go-live.",
     slug: "erpnext-implementation",
   },
   {

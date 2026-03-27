@@ -6,8 +6,8 @@ export const services: Service[] = [
   // -------------------------------------------------------------------------
   {
     slug: 'erpnext-implementation',
-    title: 'NextGen ERP Implementation',
-    shortTitle: 'NextGen ERP',
+    title: 'NXTGEN ERP Implementation',
+    shortTitle: 'NXTGEN ERP',
     description:
       'End-to-end Frappe ERP deployment tailored to your business — from requirements analysis and configuration through data migration, user training, and go-live support. Our NXTGEN Agile methodology ensures on-time delivery with minimal operational disruption.',
     icon: 'Rocket',
